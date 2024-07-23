@@ -34,7 +34,7 @@ export default function ImageWithParagraph({
   title = "Here's an intermediate size heading you can edit",
   description =
     "This text is fully editable and ready for your personal touch. Just click here, head over to the section window, or dive straight into the code to make changes as you see fit. Whether it's about the content, formatting, font, or anything in between, editing is just a click away.",
-  tagline = "Tagline",
+  tagline,
   image = DEFAULT_IMAGE,
   placement = "left",
   disableSpacing,
@@ -64,13 +64,13 @@ export default function ImageWithParagraph({
           />
         </div>
         <div class="w-full md:w-1/2 space-y-2 md:space-y-4 md:max-w-xl gap-4 z-10">
-          <p class="text-sm font-semibold">
+        {tagline && <p class="text-sm font-semibold">
             {tagline}
-          </p>
-          <p class="text-4xl leading-snug">
+          </p>}
+          <p class="text-5xl text-primary leading-snug">
             {title}
           </p>
-          <p class="leading-normal">
+          <p class="leading-normal text-2xl">
             {description}
           </p>
           <div class="flex gap-3 pt-4">
@@ -80,7 +80,7 @@ export default function ImageWithParagraph({
                 id={item?.id}
                 href={item?.href}
                 target={item?.href.includes("http") ? "_blank" : "_self"}
-                class={`font-normal px-12 py-4 border rounded-lg
+                class={`text-2xl px-12 py-4 border rounded-full
                   ${!item.style || item.style == "Outline" && "btn-outline"}
                   ${item.style == "Ghost" && "btn-ghost"}
                 `}

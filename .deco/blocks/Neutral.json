@@ -16,23 +16,15 @@
   },
   "mainColors": {
     "base-100": "#ffffff",
-    "primary": "#d4265a",
-    "secondary": "#c7c7c7",
+    "primary": "#D4265A",
+    "secondary": "#ffffff",
     "tertiary": "#404040",
-    "neutral": "#333333",
+    "neutral": "#202020",
     "success": "#008060",
     "warning": "#ffc453",
     "error": "#d82c0d",
     "info": "#2e72d2"
   },
-  "font": {
-    "__resolveType": "website/loaders/fonts/googleFonts.ts",
-    "fonts": [
-      {
-        "variations": [],
-        "family": "Albert Sans"
-      }
-    ]
-  },
+  "font": {},
   "mode": "light"
 }

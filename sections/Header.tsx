@@ -133,7 +133,7 @@ export default function Haader({
                 id={item?.id}
                 href={item?.href}
                 target={item?.href.includes("http") ? "_blank" : "_self"}
-                class={`font-normal rounded-full text-base bg-primary px-[25px]  py-[6px] ${
+                class={`font-normal rounded-full text-secondary text-base bg-primary px-[25px]  py-[6px] ${
                   item.outline && "btn-outline"
                 }`}
               >
