@@ -2,24 +2,25 @@
   "name": "Home",
   "path": "/",
   "sections": [
-    { "__resolveType": "Header" },
     {
-      "__resolveType": "site/sections/Hero.tsx",
-      "title": "<p>Click here to tweak this text however you want.</p>",
-      "description": "This text is entirely editable, tailor it freely."
+      "__resolveType": "Header"
     },
     {
-      "__resolveType": "site/sections/MainPost.tsx",
-      "post": {
-        "__resolveType": "blog/loaders/BlogPostItem.ts",
-        "slug": "why-we-web"
-      }
+      "__resolveType": "site/sections/ImageWithParagraph.tsx",
+      "title": "The Cora store",
+      "description": "Our journey starts a long time ago, in 2004 with a company called MoIP (Money over IP). One of our founders, Leo, was visiting Silicon Valley and he came across the Paypal business model, which aws disruptiong US tradicional payment methods at that time.\n",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/82f16130-a024-4d9c-ba80-2962e5661b7f",
+      "cta": [
+        {
+          "style": "Outline",
+          "href": "/",
+          "text": "Learn More"
+        }
+      ]
     },
     {
-      "__resolveType": "site/sections/BlogPosts.tsx",
-      "posts": { "__resolveType": "blog/loaders/BlogpostList.ts", "count": 6 }
-    },
-    { "__resolveType": "Footer" }
+      "__resolveType": "Footer"
+    }
   ],
   "__resolveType": "website/pages/Page.tsx",
   "seo": {

@@ -147,5 +147,11 @@
   "/.deco/blocks/Vanilla.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/Theme/Theme.tsx"
+  },
+  "/.deco/blocks/pages-Investor%2520Relations-479954.json": {
+    "name": "Investor Relations",
+    "path": "/investor-relations",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
   }
 }

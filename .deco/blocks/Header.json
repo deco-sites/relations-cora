@@ -1,4 +1,28 @@
 {
   "__resolveType": "site/sections/Header.tsx",
-  "navigation": { "links": [], "buttons": [] }
+  "navigation": {
+    "links": [
+      {
+        "label": "Press Room",
+        "url": "/"
+      },
+      {
+        "label": "Investor Relations",
+        "url": "/"
+      },
+      {
+        "label": "Our History",
+        "url": "/"
+      }
+    ],
+    "buttons": [
+      {
+        "href": "/",
+        "text": "Sing Up"
+      }
+    ]
+  },
+  "logo": {
+    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/68d485be-979c-4aba-b7b2-64088cdc0799"
+  }
 }

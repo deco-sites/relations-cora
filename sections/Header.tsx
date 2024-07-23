@@ -67,11 +67,10 @@ export default function Haader({
 }: Nav) {
   return (
     <nav class="container mx-auto lg:px-0 px-4">
-      <div class="flex gap-8 items-center justify-between py-4">
-        <a href="/">
-          <Image src={logo.src || ""} width={100} height={28} alt={logo.alt} />
-        </a>
-
+      <div class="flex gap-8 max-w-[1060px] mx-auto items-center justify-between py-4">
+          <a href="/">
+            <Image class="object-contain" src={logo.src || ""} width={103} height={26} alt={logo.alt} />
+          </a>
         <label
           class="cursor-pointer lg:hidden pt-6 relative z-40"
           for="menu-mobile"
@@ -113,7 +112,7 @@ export default function Haader({
           </div>
         </label>
 
-        <ul class="hidden items-center justify-between lg:flex w-full">
+        <ul class="hidden items-center justify-end lg:flex w-full">
           <ul class="flex">
             {navigation.links.map((link) => (
               <li>
@@ -134,7 +133,7 @@ export default function Haader({
                 id={item?.id}
                 href={item?.href}
                 target={item?.href.includes("http") ? "_blank" : "_self"}
-                class={`font-normal btn btn-primary ${
+                class={`font-normal rounded-full text-base bg-primary px-[25px]  py-[6px] ${
                   item.outline && "btn-outline"
                 }`}
               >
@@ -147,3 +146,12 @@ export default function Haader({
     </nav>
   );
 }
+/*
+base = branco
+Primary vermelho
+
+
+
+
+
+*/

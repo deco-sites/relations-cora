@@ -80,7 +80,7 @@ export default function ImageWithParagraph({
                 id={item?.id}
                 href={item?.href}
                 target={item?.href.includes("http") ? "_blank" : "_self"}
-                class={`font-normal btn btn-primary
+                class={`font-normal px-12 py-4 border rounded-lg
                   ${!item.style || item.style == "Outline" && "btn-outline"}
                   ${item.style == "Ghost" && "btn-ghost"}
                 `}
