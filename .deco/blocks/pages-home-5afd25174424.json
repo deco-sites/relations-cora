@@ -19,6 +19,40 @@
       ]
     },
     {
+      "__resolveType": "website/sections/Rendering/SingleDeferred.tsx",
+      "section": {
+        "__resolveType": "site/sections/BlogPosts.tsx"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/SingleDeferred.tsx",
+      "section": {
+        "__resolveType": "site/sections/Highlight.tsx",
+        "mainTitle": "Hightlights",
+        "mainParagraph": "Our last results",
+        "highlights": [
+          {
+            "secondaryTitles": "1.4mn",
+            "secondaryParagraphs": "costumers",
+            "title": "1.4mn",
+            "paragraph": "custumers"
+          },
+          {
+            "secondaryTitles": "R$1.6bi",
+            "secondaryParagraphs": "assets under custody (as of June 2024)"
+          },
+          {
+            "secondaryTitles": "R$163bi",
+            "secondaryParagraphs": "annualized TPV (as of June 2024)"
+          },
+          {
+            "secondaryParagraphs": "raised through 3 financing rounds",
+            "secondaryTitles": "R$153m"
+          }
+        ]
+      }
+    },
+    {
       "__resolveType": "Footer"
     }
   ],

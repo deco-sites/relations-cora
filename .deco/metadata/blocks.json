@@ -153,5 +153,9 @@
     "path": "/investor-relations",
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/Preview%20%2Fsections%2FHighlight.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Highlight.tsx"
   }
 }
