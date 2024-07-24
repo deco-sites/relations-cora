@@ -18,7 +18,7 @@
     "base-100": "#ffffff",
     "primary": "#D4265A",
     "secondary": "#ffffff",
-    "tertiary": "#404040",
+    "tertiary": "#343434",
     "neutral": "#202020",
     "success": "#008060",
     "warning": "#ffc453",
@@ -26,5 +26,10 @@
     "info": "#2e72d2"
   },
   "font": {},
-  "mode": "light"
+  "mode": "light",
+  "complementaryColors": {
+    "secondary-content": "#343434",
+    "primary-content": "#eef2f7",
+    "base-200": "#000"
+  }
 }

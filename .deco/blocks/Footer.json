@@ -1,3 +1,112 @@
 {
-  "__resolveType": "site/sections/Footer.tsx"
+  "__resolveType": "site/sections/Footer.tsx",
+  "links": [
+    {
+      "items": [
+        {
+          "label": "Sala de Imprensa",
+          "href": "/",
+          "bold": false
+        },
+        {
+          "label": "Carreiras",
+          "href": "/"
+        }
+      ],
+      "title": "Cora",
+      "bold": true,
+      "titleBold": false
+    },
+    {
+      "items": [
+        {
+          "label": "Conta PJ",
+          "href": "/"
+        },
+        {
+          "label": "Cartão",
+          "href": "/"
+        },
+        {
+          "label": "Gestão de Cobranças",
+          "href": "/"
+        },
+        {
+          "label": "Boletos",
+          "href": "/"
+        }
+      ],
+      "title": "Produtos"
+    },
+    {
+      "items": [
+        {
+          "label": "Blog",
+          "href": "/"
+        },
+        {
+          "label": "Por que não cobramos tarifas?",
+          "href": "/"
+        }
+      ],
+      "title": "Explore"
+    },
+    {
+      "items": [
+        {
+          "label": "Central de ajuda",
+          "href": "/"
+        },
+        {
+          "label": "Segurança",
+          "href": "/"
+        },
+        {
+          "label": "Contatos para Clientes:",
+          "href": "/"
+        }
+      ],
+      "title": "Suporte"
+    }
+  ],
+  "bottomLinks": [],
+  "social": [],
+  "subscribe": {
+    "instructions": "<p></p>"
+  },
+  "logo": {},
+  "bottonLinks": [],
+  "linksBellow": [
+    {
+      "items": [
+        {
+          "label": "Regulatório",
+          "href": "/"
+        },
+        {
+          "label": "Parceiros e Fornecedores",
+          "href": "/"
+        },
+        {
+          "label": "Ouvidoria",
+          "href": "/"
+        }
+      ],
+      "title": "Trânsparencia",
+      "titleBold": true
+    }
+  ],
+  "osSystem": [
+    {
+      "osName": "PlayStore",
+      "osDownloadLink": "/"
+    },
+    {
+      "osName": "App Store",
+      "osDownloadLink": "/"
+    }
+  ],
+  "downloadTitle": "Baixe o App",
+  "osTitleBOld": true,
+  "osTitleBold": true
 }

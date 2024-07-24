@@ -53,6 +53,53 @@
       }
     },
     {
+      "__resolveType": "website/sections/Rendering/SingleDeferred.tsx",
+      "section": {
+        "__resolveType": "site/sections/DoubleCard.tsx",
+        "cards": [
+          {
+            "title": "Investor Relation",
+            "paragraph": "Access our Investors Relations portal for financial information, corporate presentations and regulatory reports.",
+            "textButton": "To the portal",
+            "backgroundColor": true
+          },
+          {
+            "title": "Press room",
+            "paragraph": "Access our Investors Relations portal for financial information, corporate presentations and regulatory reports.",
+            "textButton": "To the press room",
+            "backgroundColor": true
+          }
+        ],
+        "backgroundColor": true
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/SingleDeferred.tsx",
+      "section": {
+        "__resolveType": "site/sections/OurInvestment.tsx",
+        "investors": [
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/bc6f46c0-ca5e-47de-9d26-ababd02ef039"
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/a4b6c845-6b3b-49df-8b93-bf28bbcaa3ac"
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/643f24d3-21c4-499c-a8cb-e444875c1c97"
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/0e8f9a91-4a29-42aa-8429-6203b23be454"
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/d7dff75b-955c-42fc-8091-9e59a96e6c62"
+          }
+        ],
+        "logoWidth": 150,
+        "logoHeight": 120,
+        "title": "Our Investors"
+      }
+    },
+    {
       "__resolveType": "Footer"
     }
   ],
