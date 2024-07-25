@@ -167,5 +167,13 @@
   "/.deco/blocks/EmailSubscribe.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/emailSubscribe.tsx"
+  },
+  "/.deco/blocks/Preview%20%2Fsections%2FemailSubscribe.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/emailSubscribe.tsx"
+  },
+  "/.deco/blocks/Preview%20%2Fsections%2FHeroWithDoubleText.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/HeroWithDoubleText.tsx"
   }
 }

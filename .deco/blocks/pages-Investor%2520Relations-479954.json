@@ -20,7 +20,7 @@
         "title": "Investor Relation",
         "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/dfe0d3d7-b079-4934-9800-49da275a76d5",
         "cta": [],
-        "placement": "left"
+        "placement": "right"
       }
     },
     {
@@ -51,7 +51,14 @@
     {
       "__resolveType": "website/sections/Rendering/SingleDeferred.tsx",
       "section": {
-        "__resolveType": "EmailSubscribe"
+        "__resolveType": "site/sections/emailSubscribe.tsx",
+        "bgColor": "dark",
+        "subscribleTitle": "Subscribe to get Cora’s latest news on your inbox",
+        "buttonText": "Subscribe",
+        "logoAlt": "CaraLogo",
+        "logo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/67cd8e0a-ee56-459f-9ba9-d73df1c1bc33",
+        "subscribeText": "Subscribe to get Cora’s latest news on your inbox",
+        "bgcolor": "dark"
       }
     },
     {

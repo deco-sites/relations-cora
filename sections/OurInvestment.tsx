@@ -22,7 +22,6 @@ export default function(props:props) {
             <div class="flex flex-row gap-x-10 justify-center items-center pb-[100px] py-5">
                 {props.investors?.map((investor) =>
                 <nav class="">
-                    
                         {investor.image &&
                         <a href={investor.link}>
                                         <Image
@@ -31,7 +30,6 @@ export default function(props:props) {
                                         />
                         </a>
                         }
-
                 </nav>
                 )}
             </div>

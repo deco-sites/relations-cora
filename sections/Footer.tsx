@@ -33,12 +33,18 @@ export interface Os {
   osAlt?: string;
 }
 
+export interface PJ {
+  cnpj: string;
+  endereço: string;
+}
+
 export interface Props {
   downloadTitle?: string;
   osSystem?: Os[];
   links?: Column[];
   linksBellow?: Column[];
   osTitleBold?: boolean;
+  pj?: PJ[];
 }
 
 export default function Footer({
@@ -88,6 +94,7 @@ export default function Footer({
   downloadTitle,
   osSystem,
   osTitleBold,
+  pj,
 }: Props) {
   return (
     <div class="bg-secondary-content">
@@ -144,6 +151,14 @@ export default function Footer({
                 ))}
               </div>
             </div>
+        </div>
+        <div class="flex justify-center flex-col bg-secondary">
+          {pj?.map((end)=>
+          <div class="flex px-[200px]">
+            <p class="text-primary">{end.cnpj}</p>
+            <p>{end.endereço}</p>
+          </div>
+          )}
         </div>
     </div>
   );

@@ -1,31 +1,37 @@
 import Image from "apps/website/components/Image.tsx";
 import { ImageWidget } from "apps/admin/widgets.ts";
 
-export interface props {
+export interface Props {
     subscribleTitle?: string;
     subscribeText?: string;
     buttonText?: string;
     logoAlt?: string;
     logo?: ImageWidget;
+    bgcolor?: 'dark' | 'lightGray';
 }
 
-export default function(props: props) {
+const BGCOLOR = {
+    dark: 'bg-neutral text-secondary',
+    lightGray: 'bg-primary-content text-neutral mx-auto rounded-lg gap-y-10 w-[85%]',
+};
+
+export default function({subscribeText, buttonText, logoAlt, logo, bgcolor = 'dark'}: Props) {
     return(
-        <div class="bg-neutral flex flex-col items-center">
-            <div class="pt-[56px] gap-2">
+        <div class={`${BGCOLOR[bgcolor]} flex flex-col items-center`}>
+            <div class="flex flex-col items-center justify-center pt-[56px] gap-2">
                 <Image 
-                src={props.logo}
+                src={logo}
                 width={100}
                 height={26}
-                alt={props.logoAlt}
+                alt={logoAlt}
                 />
                 <div class="py-[32px]">
-                    <h1 class="text-secondary text-[24px]">{props.subscribeText}</h1>
+                    <h1 class={`${BGCOLOR[bgcolor]} text-[24px]`}>{subscribeText}</h1>
                 </div>
             </div>
             <div class="flex gap-3 pb-[56px]">
                 <input type="text" placeholder="E-mail" class="px-12 py-[20px] text-[24px] rounded-xl" />
-                <button class="bg-primary px-[55px] text-[24px] text-secondary py-[10px] rounded-xl">{props.buttonText}</button>
+                <button class="bg-primary px-[55px] text-[24px] text-secondary py-[10px] rounded-xl">{buttonText}</button>
             </div>
         </div>
     )

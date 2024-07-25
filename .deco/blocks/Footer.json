@@ -108,5 +108,15 @@
   ],
   "downloadTitle": "Baixe o App",
   "osTitleBOld": true,
-  "osTitleBold": true
+  "osTitleBold": true,
+  "pj": [
+    {
+      "cnpj": "Cora Sociedade de Credito, Financiamento e Investimento S.A. - 37.880.206/0001-63",
+      "endereço": "Rua Frei Caneca, 1246, 3º andar, sala 31, Consolação - São Paulo/SP"
+    },
+    {
+      "cnpj": "Cora Tecnologia LTDA - 34.052.649/0001-78",
+      "endereço": "Rua Frei Caneca, 1246, 3º andar, sala 31, Consolação - São Paulo/SP"
+    }
+  ]
 }
