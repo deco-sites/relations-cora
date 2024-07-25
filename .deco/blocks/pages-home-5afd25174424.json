@@ -6,109 +6,89 @@
       "__resolveType": "Header"
     },
     {
-      "__resolveType": "website/sections/Rendering/SingleDeferred.tsx",
-      "section": {
-        "__resolveType": "site/sections/BlogPosts.tsx"
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/SingleDeferred.tsx",
-      "section": {
-        "__resolveType": "site/sections/HeroWithDoubleText.tsx",
-        "mainTitle": "Corporate Information",
-        "mainParagraph": "Cora is the first and leading digital bank exclusively focused on SMBs in Brazil. The company provides a one-stop solution by bringing together a multi-product credit offering, banking service and a full suite of business analytics tools. ",
-        "secondaryParagraph": "Our mission is to increase the likelihood of SMB entrepreneurs achieving their dreams. ",
-        "buttonText": "Sign Up",
-        "pureBackground": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/a16a3cef-aa10-4330-b4f4-a1b059cb0421"
-      }
-    },
-    {
       "__resolveType": "site/sections/ImageWithParagraph.tsx",
-      "title": "The Cora store",
-      "description": "Our journey starts a long time ago, in 2004 with a company called MoIP (Money over IP). One of our founders, Leo, was visiting Silicon Valley and he came across the Paypal business model, which aws disruptiong US tradicional payment methods at that time.\n",
-      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/82f16130-a024-4d9c-ba80-2962e5661b7f",
+      "title": "The Cora Story",
+      "description": "Our journey starts a long time ago, in 2004, with a company called MoIP (Money over IP). One of our founders, Leo, was visiting Silicon Valley and he came across the Paypal business model, which was disrupting US traditional payment methods at that time.",
+      "placement": "left",
       "cta": [
         {
           "style": "Outline",
           "href": "/",
           "text": "Learn More"
         }
+      ],
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/82f16130-a024-4d9c-ba80-2962e5661b7f"
+    },
+    {
+      "__resolveType": "site/sections/Highlight.tsx",
+      "mainTitle": "Highlights",
+      "mainParagraph": "Our latest results",
+      "highlights": [
+        {
+          "secondaryTitles": "1.44mm",
+          "secondaryParagraphs": "Customers"
+        },
+        {
+          "secondaryParagraphs": "assets under custody (as of June 2024)",
+          "secondaryTitles": "R$ 1.6bi"
+        },
+        {
+          "secondaryTitles": "R$ 163bi",
+          "secondaryParagraphs": "annualized TPV (as of June 2024)"
+        },
+        {
+          "secondaryTitles": "$ 153m",
+          "secondaryParagraphs": "raised through 3 financing rounds"
+        }
       ]
     },
     {
-      "__resolveType": "website/sections/Rendering/SingleDeferred.tsx",
-      "section": {
-        "__resolveType": "site/sections/Highlight.tsx",
-        "mainTitle": "Hightlights",
-        "mainParagraph": "Our last results",
-        "highlights": [
-          {
-            "secondaryTitles": "1.4mn",
-            "secondaryParagraphs": "costumers",
-            "title": "1.4mn",
-            "paragraph": "custumers"
-          },
-          {
-            "secondaryTitles": "R$1.6bi",
-            "secondaryParagraphs": "assets under custody (as of June 2024)"
-          },
-          {
-            "secondaryTitles": "R$163bi",
-            "secondaryParagraphs": "annualized TPV (as of June 2024)"
-          },
-          {
-            "secondaryParagraphs": "raised through 3 financing rounds",
-            "secondaryTitles": "R$153m"
-          }
-        ]
-      }
+      "__resolveType": "site/sections/DoubleCard.tsx",
+      "cards": [
+        {
+          "title": "Investor Relations",
+          "paragraph": "Access our Investors Relations portal for financial information, corporate presentations and regulatory reports.",
+          "textlink": "/",
+          "textButton": "To the portal",
+          "backgroundColor": true
+        },
+        {
+          "title": "Press Room",
+          "paragraph": "Access our Press Room for releases, media clipping, media kit and more. ",
+          "textButton": "To the press room",
+          "textlink": "/"
+        }
+      ]
     },
     {
-      "__resolveType": "website/sections/Rendering/SingleDeferred.tsx",
-      "section": {
-        "__resolveType": "site/sections/DoubleCard.tsx",
-        "cards": [
-          {
-            "title": "Investor Relation",
-            "paragraph": "Access our Investors Relations portal for financial information, corporate presentations and regulatory reports.",
-            "textButton": "To the portal",
-            "backgroundColor": true
-          },
-          {
-            "title": "Press room",
-            "paragraph": "Access our Investors Relations portal for financial information, corporate presentations and regulatory reports.",
-            "textButton": "To the press room",
-            "backgroundColor": false
-          }
-        ],
-        "backgroundColor": true
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/SingleDeferred.tsx",
-      "section": {
-        "__resolveType": "site/sections/OurInvestment.tsx",
-        "investors": [
-          {
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/bc6f46c0-ca5e-47de-9d26-ababd02ef039"
-          },
-          {
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/a4b6c845-6b3b-49df-8b93-bf28bbcaa3ac"
-          },
-          {
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/643f24d3-21c4-499c-a8cb-e444875c1c97"
-          },
-          {
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/0e8f9a91-4a29-42aa-8429-6203b23be454"
-          },
-          {
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/d7dff75b-955c-42fc-8091-9e59a96e6c62"
-          }
-        ],
-        "logoWidth": 150,
-        "logoHeight": 120,
-        "title": "Our Investors"
-      }
+      "__resolveType": "site/sections/OurInvestment.tsx",
+      "title": "Our Investors",
+      "investors": [
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/bc6f46c0-ca5e-47de-9d26-ababd02ef039",
+          "name": "KaszeK"
+        },
+        {
+          "name": "QED",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/bcc68573-84e7-4cc1-b553-99e255403f00"
+        },
+        {
+          "name": "ribbit captal",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/a4b6c845-6b3b-49df-8b93-bf28bbcaa3ac"
+        },
+        {
+          "name": "ten",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/643f24d3-21c4-499c-a8cb-e444875c1c97"
+        },
+        {
+          "name": "greeknoarks",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/d7dff75b-955c-42fc-8091-9e59a96e6c62"
+        },
+        {
+          "name": "tiger global",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/3d8da413-8005-4374-bfe3-236989eb7eef"
+        }
+      ]
     },
     {
       "__resolveType": "Footer"

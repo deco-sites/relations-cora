@@ -3,69 +3,62 @@
   "path": "/investor-relations",
   "sections": [
     {
-      "__resolveType": "website/sections/Rendering/SingleDeferred.tsx",
-      "section": {
-        "__resolveType": "Header"
-      }
+      "__resolveType": "Header"
     },
     {
-      "__resolveType": "website/sections/Rendering/SingleDeferred.tsx",
-      "section": {
-        "__resolveType": "site/sections/ImageWithParagraph.tsx",
-        "disableSpacing": {
-          "top": false,
-          "bottom": false
+      "__resolveType": "site/sections/ImageWithParagraph.tsx",
+      "placement": "right",
+      "title": "Investor Relation",
+      "description": "Cora is the first and leading digital bank exclusively focused on SMBs in Brazil. The company provides a one-stop solution by bringing together a multi-product credit offering, banking service and a full suite of business analytics tools. \n\nOur mission is to increase the likelihood of SMB entrepreneurs achieving their dreams. ",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/dfe0d3d7-b079-4934-9800-49da275a76d5",
+      "cta": []
+    },
+    {
+      "__resolveType": "site/sections/CompanyInformation.tsx",
+      "info": [
+        {
+          "date": "2024-07-24",
+          "post": "Nome do Post"
         },
-        "description": "Cora is the first and leading digital bank exclusively focused on SMBs in Brazil. The company provides a one-stop solution by bringing together a multi-product credit offering, banking service and a full suite of business analytics tools. \n\nOur mission is to increase the likelihood of SMB entrepreneurs achieving their dreams. ",
-        "title": "Investor Relation",
-        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/dfe0d3d7-b079-4934-9800-49da275a76d5",
-        "cta": [],
-        "placement": "right"
-      }
+        {
+          "date": "2024-07-24",
+          "post": "Nome do Post"
+        },
+        {
+          "date": "2024-07-24",
+          "post": "Nome do Post"
+        },
+        {
+          "date": "2024-07-24",
+          "post": "Nome do Post"
+        },
+        {
+          "date": "2024-07-24",
+          "post": "Nome do Post"
+        },
+        {
+          "date": "2024-07-24",
+          "post": "Nome do Post"
+        },
+        {
+          "date": "2024-07-24",
+          "post": "Nome do Post"
+        }
+      ],
+      "title": "Financial information"
     },
     {
-      "__resolveType": "website/sections/Rendering/SingleDeferred.tsx",
-      "section": {
-        "__resolveType": "site/sections/CompanyInformation.tsx",
-        "title": "Financial information",
-        "info": [
-          {
-            "post": "Nome do post",
-            "date": "2024-07-22"
-          },
-          {
-            "post": "Nome do post",
-            "date": "2024-07-12"
-          },
-          {
-            "post": "Nome do post",
-            "date": "2024-07-19"
-          },
-          {
-            "post": "Nome do post",
-            "date": "2024-07-09"
-          }
-        ]
-      }
+      "__resolveType": "site/sections/emailSubscribe.tsx",
+      "bgcolor": "dark",
+      "subscribleTitle": "Subscribe to get Cora’s latest news on your inbox",
+      "buttonText": "Subscribe",
+      "logoAlt": "CaraLogo",
+      "logo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/67cd8e0a-ee56-459f-9ba9-d73df1c1bc33",
+      "subscribeText": "Subscribe to get Cora’s latest news on your inbox",
+      "bgColor": "lightGray"
     },
     {
-      "__resolveType": "website/sections/Rendering/SingleDeferred.tsx",
-      "section": {
-        "__resolveType": "site/sections/emailSubscribe.tsx",
-        "bgColor": "dark",
-        "subscribleTitle": "Subscribe to get Cora’s latest news on your inbox",
-        "buttonText": "Subscribe",
-        "logoAlt": "CaraLogo",
-        "logo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/67cd8e0a-ee56-459f-9ba9-d73df1c1bc33",
-        "subscribeText": "Subscribe to get Cora’s latest news on your inbox",
-        "bgcolor": "dark"
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/SingleDeferred.tsx",
-      "section": {
-        "__resolveType": "Footer"
-      }
+      "__resolveType": "Footer"
     }
   ],
   "seo": {
