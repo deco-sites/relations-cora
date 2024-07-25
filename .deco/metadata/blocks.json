@@ -157,5 +157,15 @@
   "/.deco/blocks/Preview%20%2Fsections%2FHighlight.tsx.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/Highlight.tsx"
+  },
+  "/.deco/blocks/pages-Press%2520Room-979431.json": {
+    "name": "Press Room",
+    "path": "/press-room",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/EmailSubscribe.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/emailSubscribe.tsx"
   }
 }

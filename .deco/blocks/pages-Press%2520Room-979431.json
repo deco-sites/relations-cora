@@ -1,6 +1,6 @@
 {
-  "name": "Investor Relations",
-  "path": "/investor-relations",
+  "name": "Press Room",
+  "path": "/press-room",
   "sections": [
     {
       "__resolveType": "website/sections/Rendering/SingleDeferred.tsx",
@@ -12,38 +12,60 @@
       "__resolveType": "website/sections/Rendering/SingleDeferred.tsx",
       "section": {
         "__resolveType": "site/sections/ImageWithParagraph.tsx",
-        "disableSpacing": {
-          "top": false,
-          "bottom": false
-        },
         "description": "Cora is the first and leading digital bank exclusively focused on SMBs in Brazil. The company provides a one-stop solution by bringing together a multi-product credit offering, banking service and a full suite of business analytics tools. \n\nOur mission is to increase the likelihood of SMB entrepreneurs achieving their dreams. ",
-        "title": "Investor Relation",
+        "title": "Press Room",
         "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/dfe0d3d7-b079-4934-9800-49da275a76d5",
-        "cta": [],
-        "placement": "left"
+        "cta": []
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/SingleDeferred.tsx",
+      "section": {
+        "__resolveType": "site/sections/DoubleCard.tsx",
+        "cards": [
+          {
+            "title": "Press Kit",
+            "paragraph": "Acess our media kit",
+            "textButton": "Download",
+            "backgroundColor": true
+          },
+          {
+            "title": "Contact Us",
+            "paragraph": "Contact our press relations team",
+            "textButton": "To the press room"
+          }
+        ]
       }
     },
     {
       "__resolveType": "website/sections/Rendering/SingleDeferred.tsx",
       "section": {
         "__resolveType": "site/sections/CompanyInformation.tsx",
-        "title": "Financial information",
+        "title": "Press Information",
         "info": [
           {
-            "post": "Nome do post",
-            "date": "2024-07-22"
+            "date": "2024-07-18",
+            "post": "Nome do post"
           },
           {
-            "post": "Nome do post",
-            "date": "2024-07-12"
+            "date": "2024-07-18",
+            "post": "Nome do post"
           },
           {
-            "post": "Nome do post",
-            "date": "2024-07-19"
+            "date": "2024-07-18",
+            "post": "Nome do post"
           },
           {
-            "post": "Nome do post",
-            "date": "2024-07-09"
+            "date": "2024-07-18",
+            "post": "Nome do post"
+          },
+          {
+            "date": "2024-07-18",
+            "post": "Nome do post"
+          },
+          {
+            "date": "2024-07-18",
+            "post": "Nome do post"
           }
         ]
       }

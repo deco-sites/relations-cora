@@ -6,6 +6,12 @@
       "__resolveType": "Header"
     },
     {
+      "__resolveType": "website/sections/Rendering/SingleDeferred.tsx",
+      "section": {
+        "__resolveType": "site/sections/BlogPosts.tsx"
+      }
+    },
+    {
       "__resolveType": "site/sections/ImageWithParagraph.tsx",
       "title": "The Cora store",
       "description": "Our journey starts a long time ago, in 2004 with a company called MoIP (Money over IP). One of our founders, Leo, was visiting Silicon Valley and he came across the Paypal business model, which aws disruptiong US tradicional payment methods at that time.\n",
@@ -17,12 +23,6 @@
           "text": "Learn More"
         }
       ]
-    },
-    {
-      "__resolveType": "website/sections/Rendering/SingleDeferred.tsx",
-      "section": {
-        "__resolveType": "site/sections/BlogPosts.tsx"
-      }
     },
     {
       "__resolveType": "website/sections/Rendering/SingleDeferred.tsx",
@@ -67,7 +67,7 @@
             "title": "Press room",
             "paragraph": "Access our Investors Relations portal for financial information, corporate presentations and regulatory reports.",
             "textButton": "To the press room",
-            "backgroundColor": true
+            "backgroundColor": false
           }
         ],
         "backgroundColor": true

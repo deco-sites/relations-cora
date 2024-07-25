@@ -6,37 +6,39 @@ import * as $$$$$$$$$$$0 from "./apps/decohub.ts";
 import * as $$$$$$$$$$$1 from "./apps/site.ts";
 import * as $$$$$$0 from "./sections/BlogPost.tsx";
 import * as $$$$$$1 from "./sections/BlogPosts.tsx";
-import * as $$$$$$2 from "./sections/DoubleCard.tsx";
-import * as $$$$$$3 from "./sections/Faq.tsx";
-import * as $$$$$$4 from "./sections/Footer.tsx";
-import * as $$$$$$5 from "./sections/Header.tsx";
-import * as $$$$$$6 from "./sections/Hero.tsx";
-import * as $$$$$$7 from "./sections/Highlight.tsx";
-import * as $$$$$$8 from "./sections/ImageWithParagraph.tsx";
-import * as $$$$$$9 from "./sections/Logos.tsx";
-import * as $$$$$$10 from "./sections/MainPost.tsx";
-import * as $$$$$$14 from "./sections/mymaintest.tsx";
-import * as $$$$$$11 from "./sections/OurInvestment.tsx";
-import * as $$$$$$12 from "./sections/Testimonials.tsx";
-import * as $$$$$$13 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$2 from "./sections/CompanyInformation.tsx";
+import * as $$$$$$3 from "./sections/DoubleCard.tsx";
+import * as $$$$$$15 from "./sections/emailSubscribe.tsx";
+import * as $$$$$$4 from "./sections/Faq.tsx";
+import * as $$$$$$5 from "./sections/Footer.tsx";
+import * as $$$$$$6 from "./sections/Header.tsx";
+import * as $$$$$$7 from "./sections/Hero.tsx";
+import * as $$$$$$8 from "./sections/Highlight.tsx";
+import * as $$$$$$9 from "./sections/ImageWithParagraph.tsx";
+import * as $$$$$$10 from "./sections/Logos.tsx";
+import * as $$$$$$11 from "./sections/MainPost.tsx";
+import * as $$$$$$12 from "./sections/OurInvestment.tsx";
+import * as $$$$$$13 from "./sections/Testimonials.tsx";
+import * as $$$$$$14 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
   "sections": {
     "site/sections/BlogPost.tsx": $$$$$$0,
     "site/sections/BlogPosts.tsx": $$$$$$1,
-    "site/sections/DoubleCard.tsx": $$$$$$2,
-    "site/sections/Faq.tsx": $$$$$$3,
-    "site/sections/Footer.tsx": $$$$$$4,
-    "site/sections/Header.tsx": $$$$$$5,
-    "site/sections/Hero.tsx": $$$$$$6,
-    "site/sections/Highlight.tsx": $$$$$$7,
-    "site/sections/ImageWithParagraph.tsx": $$$$$$8,
-    "site/sections/Logos.tsx": $$$$$$9,
-    "site/sections/MainPost.tsx": $$$$$$10,
-    "site/sections/mymaintest.tsx": $$$$$$14,
-    "site/sections/OurInvestment.tsx": $$$$$$11,
-    "site/sections/Testimonials.tsx": $$$$$$12,
-    "site/sections/Theme/Theme.tsx": $$$$$$13,
+    "site/sections/CompanyInformation.tsx": $$$$$$2,
+    "site/sections/DoubleCard.tsx": $$$$$$3,
+    "site/sections/emailSubscribe.tsx": $$$$$$15,
+    "site/sections/Faq.tsx": $$$$$$4,
+    "site/sections/Footer.tsx": $$$$$$5,
+    "site/sections/Header.tsx": $$$$$$6,
+    "site/sections/Hero.tsx": $$$$$$7,
+    "site/sections/Highlight.tsx": $$$$$$8,
+    "site/sections/ImageWithParagraph.tsx": $$$$$$9,
+    "site/sections/Logos.tsx": $$$$$$10,
+    "site/sections/MainPost.tsx": $$$$$$11,
+    "site/sections/OurInvestment.tsx": $$$$$$12,
+    "site/sections/Testimonials.tsx": $$$$$$13,
+    "site/sections/Theme/Theme.tsx": $$$$$$14,
   },
   "apps": {
     "site/apps/decohub.ts": $$$$$$$$$$$0,

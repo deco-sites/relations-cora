@@ -91,16 +91,16 @@ export default function Footer({
 }: Props) {
   return (
     <div class="bg-secondary-content">
-      <div class="lg:container lg:mx-auto md:max-w-[1060px] mx-4 pt-16 text-sm bg-secondary-content text-secondary">
+      <div class="lg:container lg:mx-auto md:max-w-[1060px] mx-4 pt-16 bg-secondary-content text-secondary">
         <div class="flex flex-col gap-20">
           <div class="flex flex-col gap-6 justify-between lg:flex-row">
-            <div class="flex gap-24">
+            <div class="flex gap-[150px]">
               {links?.map((link) => (
                 <div>
-                  <h4 class={`${link.titleBold && 'font-extrabold'} mb-4`}>{link.title}</h4>
+                  <h4 class={`${link.titleBold && 'font-bold'} text-[22px] mb-4`}>{link.title}</h4>
                   {link.items?.map((item) => (
                     <a
-                      class={`${item.bold && 'font-extrabold'} block hover:underline link no-underline py-1`}
+                      class={`${item.bold && 'font-bold'} block hover:underline link no-underline py-1`}
                       href={item.href}
                     >
                       {item.label}
@@ -111,9 +111,9 @@ export default function Footer({
             </div>
           </div>
         </div>
-        <div class="flex gap-28 py-24 flex-wrap">
+        <div class="flex gap-[165px] py-24 flex-wrap">
           <div>
-            <h1 class={`${osTitleBold && 'font-extrabold'}`}>{downloadTitle}</h1>
+            <h1 class={`${osTitleBold && 'font-bold'} text-[22px]`}>{downloadTitle}</h1>
             <div class="flex gap-10 pt-10">
               {osSystem?.map((os)=>
               <a class={`${os.osIcon && 'gap-1'} p-4 flex border border-secondary text-secondary rounded-xl`}
@@ -131,10 +131,10 @@ export default function Footer({
           <div class="flex gap-9">
                 {linksBellow?.map((link) => (
                   <div>
-                    <h4 class={`${link?.titleBold && 'font-bold'} mb-4`}>{link.title}</h4>
+                    <h4 class={`${link?.titleBold && 'font-bold'} text-[22px] mb-4`}>{link.title}</h4>
                     {link.items?.map((item) => (
                       <a
-                        class={`${item.bold && 'font-extrabold'} block hover:underline link no-underline py-1`}
+                        class={`${item.bold && 'font-bold'} block hover:underline link no-underline py-1`}
                         href={item.href}
                       >
                         {item.label}
