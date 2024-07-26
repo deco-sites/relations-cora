@@ -91,6 +91,9 @@
       ]
     },
     {
+      "__resolveType": "EmailSubscribe"
+    },
+    {
       "__resolveType": "Footer"
     }
   ],

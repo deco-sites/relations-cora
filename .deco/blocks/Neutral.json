@@ -33,6 +33,7 @@
   "complementaryColors": {
     "secondary-content": "#343434",
     "primary-content": "#EEF2F7",
-    "base-200": "#000"
+    "base-200": "#000",
+    "base-content": "#000000"
   }
 }
