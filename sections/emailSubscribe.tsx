@@ -2,7 +2,6 @@ import Image from "apps/website/components/Image.tsx";
 import { ImageWidget } from "apps/admin/widgets.ts";
 
 export interface Props {
-    subscribleTitle?: string;
     subscribeText?: string;
     buttonText?: string;
     logoAlt?: string;
@@ -12,20 +11,20 @@ export interface Props {
 
 const BGCOLOR = {
     dark: 'bg-neutral text-secondary',
-    lightGray: 'bg-primary-content text-neutral mx-auto rounded-lg gap-y-10 w-[85%]',
+    lightGray: 'bg-primary-content text-neutral mx-auto rounded-lg w-[80%]',
 };
 
 export default function({subscribeText, buttonText, logoAlt, logo, bgcolor = 'dark'}: Props) {
     return(
         <div class={`${BGCOLOR[bgcolor]} flex flex-col items-center`}>
             <div class="flex flex-col items-center justify-center pt-[56px] gap-2">
-                <Image 
+                {logo && <Image 
                 src={logo}
                 width={100}
                 height={26}
                 alt={logoAlt}
-                />
-                <div class="py-[32px]">
+                />}
+                <div class="py-[32px] flex grow">
                     <h1 class={`${BGCOLOR[bgcolor]} text-[24px]`}>{subscribeText}</h1>
                 </div>
             </div>

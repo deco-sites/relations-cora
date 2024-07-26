@@ -6,16 +6,6 @@
       "__resolveType": "Header"
     },
     {
-      "__resolveType": "site/sections/emailSubscribe.tsx",
-      "subscribleTitle": "Subscribe to get Cora’s latest news on your inbox",
-      "buttonText": "Subscribe",
-      "logoAlt": "CaraLogo",
-      "logo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/67cd8e0a-ee56-459f-9ba9-d73df1c1bc33",
-      "subscribeText": "Subscribe to get Cora’s latest news on your inbox",
-      "bgColor": "lightGray",
-      "bgcolor": "dark"
-    },
-    {
       "__resolveType": "site/sections/BlogPost.tsx",
       "page": {
         "post": {
@@ -27,11 +17,21 @@
           "description": "description",
           "canonical": "test"
         }
-      }
+      },
+      "showDate": true
+    },
+    {
+      "__resolveType": "site/sections/emailSubscribe.tsx",
+      "subscribleTitle": "Subscribe to get Cora’s latest news on your inbox",
+      "buttonText": "Subscribe",
+      "logoAlt": "CaraLogo",
+      "subscribeText": "Subscribe to get Cora’s latest news on your inbox",
+      "bgColor": "lightGray",
+      "bgcolor": "lightGray"
     },
     {
       "__resolveType": "site/sections/modalTextArea.tsx",
-      "questionModalMessage": "<p>From the beginning, our objective has been to solve the difficulties of managing the finances of small and medium-sized companies, creating a completely new service and a simple product, capable of simplifying the routine of the business owners. Looking into the future, we want to be the informed decision making interface of the entrepreneurs.</p><br><br><p>We know that every business carries a story and that behind this story is someone's persistence and effort. We know this because we are a bank of entrepreneurs. Made with affection, respect and admiration for those who dedicate themselves. Who struggle in their routines to break through an increasingly difficult world on their own. We are a different bank, which knows how difficult it is to start a business. </p><p></p>"
+      "questionModalMessage": "<p><span style=\"font-size: 20pt\">From the beginning, our objective has been to solve the difficulties of managing the finances of small and medium-sized companies, creating a completely new service and a simple product, capable of simplifying the routine of the business owners. Looking into the future, we want to be the informed decision making interface of the entrepreneurs.</span></p><p></p><p><span style=\"font-size: 20pt\">We know that every business carries a story and that behind this story is someone's persistence and effort. We know this because we are a bank of entrepreneurs. Made with affection, respect and admiration for those who dedicate themselves. Who struggle in their routines to break through an increasingly difficult world on their own. We are a different bank, which knows how difficult it is to start a business. <br>Our journey starts in mid-2019 when the first idea of Cora Bank was conceived. In the beginning, it was only the founders and a small group of people who created an MVP and started testing along with family and friends. In October of 2020, with an “SCD” license issued by the Brazilian Central Bank in our hands, we launched our first product, a digital checking account, a Visa-branded debit card and with a powerful value proposition:</span></p><p></p><p><span style=\"font-size: 20pt\"><br>Our journey starts in mid-2019 when the first idea of Cora Bank was conceived. In the beginning, it was only the founders and a small group of people who created an MVP and started testing along with family and friends. In October of 2020, with an “SCD” license issued by the Brazilian Central Bank in our hands, we launched our first product, a digital checking account, a Visa-branded debit card and with a powerful value proposition: bureaucracy free: sign up in minutes, no paperwork, digital-only easy to use: intuitive and simple experiences free: no monthly or transaction feesp</span></p><ul><li><p><span style=\"color: rgb(212, 38, 90); font-size: 20pt\">bureaucracy free:</span><span style=\"font-size: 20pt\"> sign up in minutes, no paperwork, digital-only</span></p></li><li><p><span style=\"color: rgb(212, 38, 90); font-size: 20pt\">easy to use:</span><span style=\"font-size: 20pt\"> intuitive and simple experiences</span></p></li><li><p><span style=\"color: rgb(212, 38, 90); font-size: 20pt\">free:</span><span style=\"font-size: 20pt\"> no monthly or transaction fees</span></p></li></ul><p></p><p></p><p><span style=\"font-size: 20pt\">Cora credits its ability to offer this solution to the decision to take the longer and more expensive route of building up its own technology stack from scratch and having its own licenses. With no intermediaries or third-party constraints, Cora can better control its customer experience, reduce the burden of layered bureaucracy and have lower operating costs, which it can pass on to customers.</span></p><p></p><p><span style=\"font-size: 20pt\">Our financial solution is delivered to clients via a mobile app, with dedicated development teams for both Android and iOS. We also have the internet banking (CoraWeb) option, but our main platform is the app. Our strategy has been understanding every need of a company owner and creating a powerful solution to it. One of Cora’s pillars is to deliver an outstanding user experience in each of our products and services, so we can delight our customers and gain enough insights to deliver more client-centered solutions.<br>212 38 90</span></p><p></p><p><span style=\"font-size: 20pt\">Since 2020, a lot has changed: we launched our Credit Card in November 2021, added several features (web app, multi-users account, virtual cards, recurring invoices, API payments, collection tools, integrated fiscal documents), and finally, in July 2024, Cora became a “SCFI”, (Investment, Financing and Credit Society), an institution regulated by the Brazilian Central Bank that is allowed to offer investment products, unlike “SCDs”.</span></p><p></p><ul><li><p><span style=\"color: rgb(212, 38, 90); font-size: 20pt\">save time</span><span style=\"font-size: 20pt\"> in repeated tasks that have been automated, such as configurable billing flows and accounting software integration.</span></p></li><li><p><span style=\"color: rgb(212, 38, 90); font-size: 20pt\">scale up</span><span style=\"font-size: 20pt\"> as they can bring collaborators, accountants and partners to manipulate the account, but still preserve the money movement control.</span></p></li><li><p><span style=\"color: rgb(212, 38, 90); font-size: 20pt\">better understand and control</span><span style=\"font-size: 20pt\"> their business performance, with advance reporting and dynamic dashboards.</span></p></li></ul>"
     },
     {
       "__resolveType": "Footer"

@@ -114,7 +114,7 @@ export default function Footer({
         <h1 class="text-secondary px-10 text-[32px]">{upperTitle}</h1>
         <div class="flex justify-between">
           {iconFooter?.map((icon)=>
-            <div class="px-10 border-x border-secondary py-[72px] flex itens-center">
+            <div class="px-10 border-x border-secondary w-[174px] py-[72px] flex itens-center">
               <a href={icon.socialLink} class="">
                 <Image
                 src={icon.imageIcon}
