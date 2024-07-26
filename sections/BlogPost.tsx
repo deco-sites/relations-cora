@@ -136,7 +136,7 @@ export default function BlogPost({ page }: Props) {
           />
           <div className="flex flex-col">
             <p className="font-semibold text-base">
-              {authors.map((author) => author.name).join(", ")}
+              {authors?.filter((author)=> author?.name).map((author) => author.name).join(", ")}
             </p>
             <p className="text-base">{formattedDate}</p>
           </div>
@@ -184,11 +184,11 @@ export default function BlogPost({ page }: Props) {
           />
           <div className="flex flex-col">
             <p className="font-semibold text-base">
-              {authors[0].name}
+              {authors[0]?.name}
             </p>
             <p className="text-base">
-              {`${authors[0].jobTitle ?? "Job Title"}, ${
-                authors[0].company || "Company"
+              {`${authors[0]?.jobTitle ?? "Job Title"}, ${
+                authors[0]?.company || "Company"
               }`}
             </p>
           </div>

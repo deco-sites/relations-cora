@@ -3,33 +3,38 @@
   "path": "/blog/:slug",
   "sections": [
     {
-      "__resolveType": "website/sections/Rendering/SingleDeferred.tsx",
-      "section": {
-        "__resolveType": "Header"
-      }
+      "__resolveType": "Header"
+    },
+    {
+      "__resolveType": "site/sections/emailSubscribe.tsx",
+      "subscribleTitle": "Subscribe to get Cora’s latest news on your inbox",
+      "buttonText": "Subscribe",
+      "logoAlt": "CaraLogo",
+      "logo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/67cd8e0a-ee56-459f-9ba9-d73df1c1bc33",
+      "subscribeText": "Subscribe to get Cora’s latest news on your inbox",
+      "bgColor": "lightGray",
+      "bgcolor": "dark"
     },
     {
       "__resolveType": "site/sections/BlogPost.tsx",
-      "post": {
-        "__resolveType": "blog/loaders/BlogPostItem.ts",
-        "slug": {
-          "__resolveType": "website/functions/requestToParam.ts",
-          "param": "slug"
-        }
-      },
       "page": {
-        "__resolveType": "blog/loaders/BlogPostPage.ts",
-        "slug": {
-          "__resolveType": "website/functions/requestToParam.ts",
-          "param": "slug"
+        "post": {
+          "__resolveType": "collections/blog/posts/1aa613320a2b"
+        },
+        "@type": "BlogPostPage",
+        "seo": {
+          "title": "Our History",
+          "description": "description",
+          "canonical": "test"
         }
       }
     },
     {
-      "__resolveType": "website/sections/Rendering/SingleDeferred.tsx",
-      "section": {
-        "__resolveType": "Footer"
-      }
+      "__resolveType": "site/sections/modalTextArea.tsx",
+      "questionModalMessage": "<p>From the beginning, our objective has been to solve the difficulties of managing the finances of small and medium-sized companies, creating a completely new service and a simple product, capable of simplifying the routine of the business owners. Looking into the future, we want to be the informed decision making interface of the entrepreneurs.</p><br><br><p>We know that every business carries a story and that behind this story is someone's persistence and effort. We know this because we are a bank of entrepreneurs. Made with affection, respect and admiration for those who dedicate themselves. Who struggle in their routines to break through an increasingly difficult world on their own. We are a different bank, which knows how difficult it is to start a business. </p><p></p>"
+    },
+    {
+      "__resolveType": "Footer"
     }
   ],
   "__resolveType": "website/pages/Page.tsx",
