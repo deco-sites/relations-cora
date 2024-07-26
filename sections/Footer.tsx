@@ -183,7 +183,7 @@ export default function Footer({
             </div>
             <div class="flex justify-center flex-col bg-secondary">
               {pj?.map((end)=>
-              <div class="flex px-[200px]">
+              <div class="flex mx-auto gap-x-2 py-2">
                 <p class="text-primary">{end.cnpj}</p>
                 <p>{end.endereço}</p>
               </div>
