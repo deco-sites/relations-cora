@@ -28,7 +28,3 @@ export default function(props: props) {
         </div>
     )
 }
-
-/*
-
-*/
