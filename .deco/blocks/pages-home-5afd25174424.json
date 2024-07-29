@@ -6,11 +6,6 @@
       "__resolveType": "Header"
     },
     {
-      "__resolveType": "site/sections/HeroWithDoubleText.tsx",
-      "pureBackground": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/a16a3cef-aa10-4330-b4f4-a1b059cb0421",
-      "mainTitle": "titulo"
-    },
-    {
       "__resolveType": "site/sections/ImageWithParagraph.tsx",
       "title": "The Cora Story",
       "description": "Our journey starts a long time ago, in 2004, with a company called MoIP (Money over IP). One of our founders, Leo, was visiting Silicon Valley and he came across the Paypal business model, which was disrupting US traditional payment methods at that time.",
@@ -46,6 +41,9 @@
           "secondaryParagraphs": "raised through 3 financing rounds"
         }
       ]
+    },
+    {
+      "__resolveType": "EmailSubscribe"
     },
     {
       "__resolveType": "site/sections/DoubleCard.tsx",
@@ -94,9 +92,6 @@
           "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/3d8da413-8005-4374-bfe3-236989eb7eef"
         }
       ]
-    },
-    {
-      "__resolveType": "EmailSubscribe"
     },
     {
       "__resolveType": "Footer"

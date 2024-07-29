@@ -13,9 +13,9 @@ export interface props {
 
 export default function(props: props) {
     return(
-        <div class="flex">
+        <div class="flex flex-wrap lg:flex-row">
             {props.cards?.map((card, index) =>
-            <div class={`${card.backgroundColor && 'bg-primary-content'} ${ index % 2 == 0 ? ' rounded-r-3xl' : 'rounded-l-3xl'} w-1/2 flex flex-col py-[116px] pl-[120px]`}>
+            <div class={`${card.backgroundColor && 'bg-primary-content'} ${ index % 2 == 0 ? ' rounded-r-3xl' : 'rounded-l-3xl'} w-full lg:w-1/2 flex flex-col py-[116px] pl-[120px]`}>
                     <h1 class="text-primary w-[90%] w-300 text-[48px]">{card.title}</h1>
                     <p class="py-[33px] grow h-[30%] w-[90%] text-2xl">{card.paragraph}</p>
                     <div>

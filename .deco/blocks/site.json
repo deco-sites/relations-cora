@@ -34,5 +34,6 @@
   },
   "flavor": {
     "framework": "fresh"
-  }
+  },
+  "pageSections": []
 }

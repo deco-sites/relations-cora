@@ -1,6 +1,5 @@
 import Image from "apps/website/components/Image.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
-import Icon from "site/components/ui/Icon.tsx";
 
 /** @title {{title}} */
 export interface Column {
@@ -27,6 +26,7 @@ export interface Social {
   href: string;
 }
 
+/**@title {{osName}} */
 export interface Os {
   osName?: string;
   osIcon?: ImageWidget;
@@ -34,6 +34,7 @@ export interface Os {
   osAlt?: string;
 }
 
+/**@title {{cnpj}} */
 export interface PJ {
   cnpj: string;
   endereço: string;
@@ -109,7 +110,7 @@ export default function Footer({
 }: Props) {
   return (
     <div>
-    <div class="bg-neutral">
+    <div class="bg-neutral hidden">
       <div class="flex w-full w-1/3 items-center lg:mx-auto max-w-[1060px]">
         <h1 class="text-secondary px-10 text-[32px]">{upperTitle}</h1>
         <div class="flex justify-between">
@@ -128,15 +129,15 @@ export default function Footer({
       <div>
         <div class="bg-secondary-content">
           <div class="lg:container lg:mx-auto md:max-w-[1060px] mx-4 pt-16 bg-secondary-content text-secondary">
-            <div class="flex flex-col gap-20">
-              <div class="flex flex-col gap-6 justify-between lg:flex-row">
-                <div class="flex gap-[150px]">
+            <div class="flex flex-col">
+              <div class="flex flex-col lg:flex-row">
+                <div class="flex justify-between flex-wrap items-between w-full gap-[10px]">
                   {links?.map((link) => (
-                    <div>
-                      <h4 class={`${link.titleBold && 'font-bold'} text-[22px] mb-4`}>{link.title}</h4>
+                    <div class="max-w-[157px] py-8 lg:py-[1px]">
+                      <h4 class={`${link.titleBold && 'font-bold'} text-[20px] lg:text-[22px] mb-4`}>{link.title}</h4>
                       {link.items?.map((item) => (
                         <a
-                          class={`${item.bold && 'font-bold'} block hover:underline link no-underline py-1`}
+                          class={`${item.bold && 'font-bold'} text-[14px] lg:text-[16px] block hover:underline link no-underline py-1`}
                           href={item.href}
                         >
                           {item.label}
@@ -147,8 +148,8 @@ export default function Footer({
                 </div>
               </div>
             </div>
-            <div class="flex gap-[165px] py-24 flex-wrap">
-              <div>
+            <div class="flex py-24 flex-wrap">
+              <div class="lg:min-w-[580px]">
                 <h1 class={`${osTitleBold && 'font-bold'} text-[22px]`}>{downloadTitle}</h1>
                 <div class="flex gap-10 pt-10">
                   {osSystem?.map((os)=>
@@ -164,7 +165,7 @@ export default function Footer({
                   )}
                 </div>
               </div>
-              <div class="flex gap-9">
+              <div>
                     {linksBellow?.map((link) => (
                       <div>
                         <h4 class={`${link?.titleBold && 'font-bold'} text-[22px] mb-4`}>{link.title}</h4>
@@ -181,7 +182,7 @@ export default function Footer({
                   </div>
                 </div>
             </div>
-            <div class="flex justify-center flex-col bg-secondary">
+            <div class="flex justify-center text-[14px] lg:text-[16px] flex-col bg-secondary">
               {pj?.map((end)=>
               <div class="flex mx-auto gap-x-2 py-2">
                 <p class="text-primary">{end.cnpj}</p>

@@ -16,7 +16,7 @@ const BGCOLOR = {
 
 export default function({subscribeText, buttonText, logoAlt, logo, bgcolor = 'dark'}: Props) {
     return(
-        <div class={`${BGCOLOR[bgcolor]} flex flex-col items-center`}>
+        <div class={`${BGCOLOR[bgcolor]} flex flex-col justify-center items-center`}>
             <div class="flex flex-col items-center justify-center pt-[56px] gap-2">
                 {logo && <Image 
                 src={logo}
@@ -28,9 +28,9 @@ export default function({subscribeText, buttonText, logoAlt, logo, bgcolor = 'da
                     <h1 class={`${BGCOLOR[bgcolor]} text-[24px]`}>{subscribeText}</h1>
                 </div>
             </div>
-            <div class="flex gap-3 pb-[56px]">
-                <input type="text" placeholder="E-mail" class="px-12 py-[20px] text-[24px] rounded-xl" />
-                <button class="bg-primary px-[55px] text-[24px] text-secondary py-[10px] rounded-xl">{buttonText}</button>
+            <div class="flex flex-column flex-wrap gap-3 align-center pb-[56px] lg:flex-row">
+                <input type="text" placeholder="E-mail" class="lg:px-12 py-[20px] text-[24px] rounded-xl" />
+                <button class="bg-primary lg:px-[55px] py-4 px-8 text-[24px] text-secondary lg:py-[10px] rounded-xl">{buttonText}</button>
             </div>
         </div>
     )
