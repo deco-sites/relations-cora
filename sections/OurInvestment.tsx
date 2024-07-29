@@ -26,7 +26,7 @@ export default function(props:props) {
                         <a href={investor.link}>
                                         <Image
                                         src={investor.image}
-                                        height={22}
+                                        height={42}
                                         />
                         </a>
                         }
