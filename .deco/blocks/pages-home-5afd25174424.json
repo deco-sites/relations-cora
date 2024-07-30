@@ -29,12 +29,14 @@
           "secondaryParagraphs": "Customers"
         },
         {
-          "secondaryParagraphs": "assets under custody (as of June 2024)",
-          "secondaryTitles": "R$ 1.6bi"
+          "secondaryParagraphs": "assets under custody ",
+          "secondaryTitles": "R$ 1.6bi",
+          "tertiaryparagraph": "(as of June 2024)"
         },
         {
           "secondaryTitles": "R$ 163bi",
-          "secondaryParagraphs": "annualized TPV (as of June 2024)"
+          "secondaryParagraphs": "annualized TPV",
+          "tertiaryparagraph": "(as of June 2024)"
         },
         {
           "secondaryTitles": "$ 153m",
