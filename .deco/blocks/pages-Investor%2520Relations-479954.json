@@ -45,7 +45,14 @@
           "post": "Nome do Post"
         }
       ],
-      "title": "Financial information"
+      "title": "Financial information",
+      "test": {
+        "__resolveType": "collections/blog/posts/e9b0ba35c72b"
+      },
+      "posts": {
+        "__resolveType": "blog/loaders/BlogpostList.ts",
+        "count": 200
+      }
     },
     {
       "__resolveType": "site/sections/emailSubscribe.tsx",

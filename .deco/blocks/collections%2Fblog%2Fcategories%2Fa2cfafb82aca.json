@@ -1,0 +1,8 @@
+{
+  "name": "collections/blog/categories/a2cfafb82aca",
+  "__resolveType": "blog/loaders/Category.ts",
+  "category": {
+    "name": "press",
+    "slug": "press"
+  }
+}

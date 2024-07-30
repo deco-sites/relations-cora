@@ -19,14 +19,15 @@ export default function(props:props) {
             <div class="flex justify-center items-center py-5">
                 <h1 class="text-[32px] font-bold">{props.title}</h1>
             </div>
-            <div class="flex flex-row gap-x-10 justify-center items-center pb-[100px] py-5">
+            <div class="flex flex-row flex-wrap gap-x-10 justify-around items-center pb-[100px] py-5">
                 {props.investors?.map((investor) =>
-                <nav class="">
+                <nav class="lg:max-w-[100px]">
                         {investor.image &&
                         <a href={investor.link}>
                                         <Image
                                         src={investor.image}
-                                        height={42}
+
+                                        height={24}
                                         />
                         </a>
                         }

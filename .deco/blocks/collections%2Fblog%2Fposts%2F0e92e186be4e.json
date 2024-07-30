@@ -1,0 +1,19 @@
+{
+  "name": "collections/blog/posts/0e92e186be4e",
+  "__resolveType": "blog/loaders/Blogpost.ts",
+  "post": {
+    "authors": [],
+    "categories": [
+      {
+        "name": "press",
+        "slug": "press"
+      }
+    ],
+    "title": "teste2",
+    "excerpt": ";",
+    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/a16a3cef-aa10-4330-b4f4-a1b059cb0421",
+    "date": "2024-07-02",
+    "slug": "teste2",
+    "content": "<p>testetesteteste</p>"
+  }
+}

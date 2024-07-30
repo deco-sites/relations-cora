@@ -1,0 +1,8 @@
+{
+  "name": "collections/blog/categories/ce3f12877ea6",
+  "__resolveType": "blog/loaders/Category.ts",
+  "category": {
+    "name": "investor",
+    "slug": "investor"
+  }
+}

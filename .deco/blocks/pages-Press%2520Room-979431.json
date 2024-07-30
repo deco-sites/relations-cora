@@ -13,6 +13,17 @@
       "cta": []
     },
     {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/pressBlogList.tsx",
+        "title": "Press room",
+        "posts": {
+          "__resolveType": "blog/loaders/BlogpostList.ts",
+          "count": 100
+        }
+      }
+    },
+    {
       "__resolveType": "site/sections/DoubleCard.tsx",
       "cards": [
         {
@@ -26,44 +37,6 @@
           "title": "Contact Us",
           "textButton": "To the press room",
           "paragraph": "Contact our press relations team"
-        }
-      ]
-    },
-    {
-      "__resolveType": "site/sections/CompanyInformation.tsx",
-      "title": "Press Information",
-      "info": [
-        {
-          "post": "Nome do Post",
-          "date": "2024-07-10"
-        },
-        {
-          "post": "Nome do Post",
-          "date": "2024-07-10"
-        },
-        {
-          "post": "Nome do Post",
-          "date": "2024-07-10"
-        },
-        {
-          "post": "Nome do Post",
-          "date": "2024-07-10"
-        },
-        {
-          "post": "Nome do Post",
-          "date": "2024-07-10"
-        },
-        {
-          "post": "Nome do Post",
-          "date": "2024-07-10"
-        },
-        {
-          "post": "Nome do Post",
-          "date": "2024-07-10"
-        },
-        {
-          "post": "Nome do Post",
-          "date": "2024-07-10"
         }
       ]
     },

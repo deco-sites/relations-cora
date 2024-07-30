@@ -1,0 +1,19 @@
+{
+  "name": "collections/blog/posts/b76f632894a1",
+  "__resolveType": "blog/loaders/Blogpost.ts",
+  "post": {
+    "authors": [],
+    "categories": [
+      {
+        "name": "investor",
+        "slug": "investor"
+      }
+    ],
+    "title": "asdasdasdas",
+    "excerpt": "asdasdasd",
+    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/a8e5df6b-ecc9-4c9b-85b1-cd138e476af1",
+    "date": "2024-07-10",
+    "slug": "test",
+    "content": "<p>asdasdasdasdasdasdasdasd</p>"
+  }
+}
