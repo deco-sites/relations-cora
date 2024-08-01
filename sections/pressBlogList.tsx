@@ -15,7 +15,7 @@ const formatDate = (dateString) => {
 export default function({title, posts}:props) {
     return(
         <div class="px-[110px] py-[126px] flex flex-col justify-center">
-            <h1 class="text-5xl text-primary text-extrabold py-4">{title}</h1>
+            <h1 class="text-5xl text-extrabold py-4">{title}</h1>
             {posts?.map((test)=>(
                 test.categories.map((test2, index)=>(
                     test2.name === 'press' && (

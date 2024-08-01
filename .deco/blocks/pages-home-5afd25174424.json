@@ -6,6 +6,19 @@
       "__resolveType": "Header"
     },
     {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/HeroWithDoubleText.tsx",
+        "pureBackground": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/397610c6-d334-42e7-996d-094decd48378",
+        "mainTitle": "Corporate Information",
+        "mainParagraph": "Cora is the first and leading digital bank exclusively focused on SMBs in Brazil. The company provides a one-stop solution by bringing together a multi-product credit offering, banking service and a full suite of business analytics tools. ",
+        "secondaryParagraph": "Our mission is to increase the likelihood of SMB entrepreneurs achieving their dreams. ",
+        "buttonText": "sign up",
+        "coraLogo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/67cd8e0a-ee56-459f-9ba9-d73df1c1bc33",
+        "peopleImageCenter": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/954ac2b6-52f4-4800-bb52-15e6fdc75f79"
+      }
+    },
+    {
       "__resolveType": "site/sections/ImageWithParagraph.tsx",
       "title": "The Cora Story",
       "description": "Our journey starts a long time ago, in 2004, with a company called MoIP (Money over IP). One of our founders, Leo, was visiting Silicon Valley and he came across the Paypal business model, which was disrupting US traditional payment methods at that time.",
