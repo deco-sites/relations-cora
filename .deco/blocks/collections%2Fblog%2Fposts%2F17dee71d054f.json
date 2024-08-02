@@ -1,0 +1,19 @@
+{
+  "name": "collections/blog/posts/17dee71d054f",
+  "__resolveType": "blog/loaders/Blogpost.ts",
+  "post": {
+    "authors": [],
+    "categories": [
+      {
+        "name": "investor",
+        "slug": "investor"
+      }
+    ],
+    "title": "sadasdasdasdasd",
+    "excerpt": "asdasdasdasd",
+    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/9f290e8b-7d07-43d1-920d-76fe5927379e",
+    "slug": "meupaidoceu",
+    "content": "<p>asdasdasd</p>",
+    "date": "2024-08-17"
+  }
+}
