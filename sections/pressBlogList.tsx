@@ -21,7 +21,7 @@ export default function({title, posts}:props) {
                     test2.name === 'press' && (
                         <div class={`${index % 2 === 0 ? 'bg-primary-content' : 'bg-secondary'} px-6 py-4 gap-x-20 flex gap-4`}>
                             <p class="text-xl text-primary">{formatDate(test.date)}</p>
-                            <p class="text-xl">{test.title}</p>
+                            <a href={`/blog/${test.slug}`} class="text-xl">{test.title}</a>
                         </div>
                     )
 
