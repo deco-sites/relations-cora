@@ -28,9 +28,9 @@ export default function({subscribeText, buttonText, logoAlt, logo, bgcolor = 'da
                     <h1 class={`${BGCOLOR[bgcolor]} text-[24px]`}>{subscribeText}</h1>
                 </div>
             </div>
-            <div class="flex flex-column flex-wrap gap-3 align-center pb-[56px] lg:flex-row">
-                <input type="text" placeholder="E-mail" class="lg:px-12 py-[20px] text-[24px] rounded-xl" />
-                <button class="bg-primary lg:px-[55px] py-4 px-8 text-[24px] text-secondary lg:py-[10px] rounded-xl">{buttonText}</button>
+            <div class="flex flex-column flex-wrap justify-center gap-3 align-center pb-[56px] lg:flex-row">
+                <input type="text" placeholder="E-mail" class="lg:px-12 px-4 py-2 text-[24px] rounded-xl" />
+                <button class="bg-primary py-2 px-4 text-[24px] text-secondary lg:px-[55px] lg:py-[10px] rounded-xl">{buttonText}</button>
             </div>
         </div>
     )
