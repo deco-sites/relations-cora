@@ -1,17 +1,25 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
+import { UrlData } from "site/loaders/urlData.ts";
 
 export interface CTA {
   id?: string;
   href: string;
-  text: string;
+  englishText: string;
+  portugueseText: string;
   style?: "Outline" | "Ghost";
 }
 
 export interface Props {
-  title?: string;
+  urlData: UrlData;
+  englishTitle?: string;
+  portugueseTitle?: string;
   /** @format textarea */
-  description?: string;
+  englishDescription?: string;
+    /** @format textarea */
+  portugueseDescription?: string;
+  englishSmallDescription?: string;
+  portugueseSmallDescription?: string;
   tagline?: string;
   image?: ImageWidget;
   placement?: "left" | "right";
@@ -31,17 +39,20 @@ const DEFAULT_IMAGE =
   "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4763/772e246e-1959-46ac-a309-3f25ab20af6f";
 
 export default function ImageWithParagraph({
-  title,
-  description,
+  portugueseTitle,
+  englishTitle,
+  portugueseDescription,
+  englishDescription,
   tagline,
   image = DEFAULT_IMAGE,
   placement = "left",
   disableSpacing,
-  cta = [
-    { id: "change-me-1", href: "/", text: "Change me", style: "Outline" },
-    { id: "change-me-2", href: "/", text: "Change me", style: "Ghost" },
-  ],
+  urlData,
+  englishSmallDescription,
+  portugueseSmallDescription,
+  cta,
 }: Props) {
+  const eng = urlData.lang == 'EN' ? true : false;
   return (
     <div class="container mx-auto w-[80%] mx-4 text-sm">
       <div
@@ -67,11 +78,12 @@ export default function ImageWithParagraph({
             {tagline}
           </p>}
           <p class="text-5xl text-primary font-bold leading-snug">
-            {title}
+            {eng ? englishTitle : portugueseTitle}
           </p>
           <p class="leading-normal text-2xl">
-            {description}
+            {eng ? englishDescription : portugueseDescription}
           </p>
+          <p class="leading-normal text-[22px] pt-4">{eng ? englishSmallDescription : portugueseSmallDescription}</p>
           <div class="flex gap-3 pt-4">
             {cta?.map((item) => (
               <a
@@ -84,7 +96,7 @@ export default function ImageWithParagraph({
                   ${item.style == "Ghost" && "btn-ghost"}
                 `}
               >
-                {item?.text}
+                {eng ? item.englishText : item.portugueseText}
                 {item.style == "Ghost" && (
                   <svg
                     width="24"

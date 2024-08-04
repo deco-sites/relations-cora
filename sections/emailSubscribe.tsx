@@ -1,12 +1,15 @@
 import Image from "apps/website/components/Image.tsx";
 import { ImageWidget } from "apps/admin/widgets.ts";
+import { UrlData } from "../loaders/urlData.ts";
 
 export interface Props {
-    subscribeText?: string;
+    portugueseText?: string;
+    englishText?: string;
     buttonText?: string;
     logoAlt?: string;
     logo?: ImageWidget;
     bgcolor?: 'dark' | 'lightGray';
+    urlData: UrlData;
 }
 
 const BGCOLOR = {
@@ -14,7 +17,8 @@ const BGCOLOR = {
     lightGray: 'bg-primary-content text-neutral mx-auto rounded-lg w-[80%]',
 };
 
-export default function({subscribeText, buttonText, logoAlt, logo, bgcolor = 'dark'}: Props) {
+export default function({portugueseText, englishText, urlData, buttonText, logoAlt, logo, bgcolor = 'dark'}: Props) {
+    const eng = urlData.lang == 'EN' ? true : false;
     return(
         <div class={`${BGCOLOR[bgcolor]} flex flex-col justify-center items-center`}>
             <div class="flex flex-col items-center justify-center pt-[56px] gap-2">
@@ -25,7 +29,7 @@ export default function({subscribeText, buttonText, logoAlt, logo, bgcolor = 'da
                 alt={logoAlt}
                 />}
                 <div class="py-[32px] flex grow">
-                    <h1 class={`${BGCOLOR[bgcolor]} text-[24px]`}>{subscribeText}</h1>
+                    <h1 class={`${BGCOLOR[bgcolor]} text-[24px]`}>{eng ? englishText : portugueseText}</h1>
                 </div>
             </div>
             <div class="flex flex-column flex-wrap justify-center gap-3 align-center pb-[56px] lg:flex-row">

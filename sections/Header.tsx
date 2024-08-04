@@ -1,5 +1,7 @@
 import Image from "apps/website/components/Image.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
+import { UrlData } from "site/loaders/urlData.ts";
+import  LangSelector from '../islands/LangSelector.tsx'
 
 type Type = "dark" | "light";
 
@@ -10,14 +12,17 @@ export interface CTA {
   outline?: boolean;
 }
 
+
 export interface Nav {
+  urlData: UrlData;
   logo?: {
     src?: ImageWidget;
     alt?: string;
   };
   navigation?: {
     links: {
-      label?: string;
+      portugueseLabel?: string;
+      englishLabel?: string;
       url?: string;
     }[];
     buttons: CTA[];
@@ -52,19 +57,16 @@ export default function Haader({
       "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/67120bcd-936a-4ea5-a760-02ed5c4a3d04",
     alt: "Logo",
   },
+  urlData,
   navigation = {
-    links: [
-      { label: "Home", url: "/" },
-      { label: "About us", url: "/" },
-      { label: "Princing", url: "/" },
-      { label: "Contact", url: "/" },
-    ],
+    links: [],
     buttons: [
       { id: "change-me-1", href: "/", text: "Change me", outline: false },
       { id: "change-me-2", href: "/", text: "Change me", outline: true },
     ],
   },
 }: Nav) {
+  const eng = urlData.lang == 'EN' ? true : false;
   return (
     <nav class="container mx-auto lg:px-0 px-4">
       <div class="flex gap-8 max-w-[1060px] mx-auto items-center justify-between py-4">
@@ -87,8 +89,8 @@ export default function Haader({
               <ul class="flex flex-col gap-8">
                 {navigation?.links.map((link) => (
                   <li>
-                    <a href={link.url} aria-label={link.label}>
-                      {link.label}
+                    <a href={link.url} aria-label={eng ? link.englishLabel : link.portugueseLabel}>
+                      {eng ? link.englishLabel : link.portugueseLabel}
                     </a>
                   </li>
                 ))}
@@ -118,13 +120,14 @@ export default function Haader({
               <li>
                 <a
                   href={link.url}
-                  aria-label={link.label}
+                  aria-label={eng ? link.englishLabel : link.portugueseLabel}
                   class="link no-underline hover:underline p-4"
                 >
-                  {link.label}
+                  {eng ? link.englishLabel : link.portugueseLabel}
                 </a>
               </li>
             ))}
+            <LangSelector />
           </ul>
           <ul class="flex gap-3">
             {navigation.buttons?.map((item) => (
@@ -146,12 +149,4 @@ export default function Haader({
     </nav>
   );
 }
-/*
-base = branco
-Primary vermelho
 
-
-
-
-
-*/

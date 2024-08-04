@@ -4,25 +4,30 @@
     "links": [
       {
         "label": "Press Room",
-        "url": "/"
+        "url": "/press-room",
+        "portugueseLabel": "Sala de Imprensa",
+        "englishLabel": "Press Room"
       },
       {
         "label": "Investor Relations",
-        "url": "/"
+        "url": "/investor-relation",
+        "englishLabel": "Investor Relations",
+        "portugueseLabel": "Relações com Investidores"
       },
       {
         "label": "Our History",
-        "url": "/"
+        "url": "/blog/our-history",
+        "englishLabel": "Our History",
+        "portugueseLabel": "Nossa História"
       }
     ],
-    "buttons": [
-      {
-        "href": "/",
-        "text": "sign up"
-      }
-    ]
+    "buttons": []
   },
   "logo": {
-    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/dbdd4311-cf47-4882-bc1b-90ba7fe5f46e"
+    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/dbdd4311-cf47-4882-bc1b-90ba7fe5f46e",
+    "alt": "cora logo"
+  },
+  "urlData": {
+    "__resolveType": "site/loaders/urlData.ts"
   }
 }

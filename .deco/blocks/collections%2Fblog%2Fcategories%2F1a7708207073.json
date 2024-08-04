@@ -1,0 +1,8 @@
+{
+  "name": "collections/blog/categories/1a7708207073",
+  "__resolveType": "blog/loaders/Category.ts",
+  "category": {
+    "name": "imprensa",
+    "slug": "imprensa"
+  }
+}

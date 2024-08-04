@@ -1,9 +1,10 @@
 import { BlogPost, Category } from "apps/blog/types.ts";
- 
+import { UrlData } from "site/loaders/urlData.ts"; 
 export interface props {
     title?: string;
     posts: BlogPost[] | null;
     categoria: Category[];
+    urlData: UrlData;
 }
 
 const formatDate = (dateString) => {
@@ -12,20 +13,18 @@ const formatDate = (dateString) => {
   };
 
 
-export default function({title, posts}:props) {
+export default function({title, posts, urlData}:props) {
+    const eng = urlData.lang == 'EN' ? true : false;
+    posts = posts?.filter((blog) => eng ? blog.categories[0].name == 'press' : blog.categories[0].name == 'imprensa') || [];
     return(
         <div class="px-[110px] py-[126px] flex flex-col justify-center">
             <h1 class="text-5xl text-extrabold py-4">{title}</h1>
-            {posts?.map((test)=>(
-                test.categories.map((test2)=>(
-                    test2.name === 'press' && (
-                        <div class="odd:bg-secondary even:bg-primary-content px-6 py-4 gap-x-20 flex gap-4">
-                            <p class="text-xl text-primary">{formatDate(test.date)}</p>
-                            <a href={`/blog/${test.slug}`} class="text-xl">{test.title}</a>
-                        </div>
-                    )
-
-                    ))))}
+            {posts?.map((blog)=> (
+                <div class="odd:bg-secondary even:bg-primary-content px-6 py-4 gap-x-4 md:gap-x-20 flex gap-4">
+                        <p class="text-xl text-primary">{formatDate(blog.date)}</p>
+                        <a href={`/blog/${blog.slug}`}class="text-xl break-all">{blog.title}</a>
+                </div>
+            ))}
         </div>
     )
 }

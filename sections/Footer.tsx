@@ -1,16 +1,21 @@
 import Image from "apps/website/components/Image.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
+import { UrlData } from '../loaders/urlData.ts'
 
 /** @title {{title}} */
 export interface Column {
-  title: string;
+  englishTitle: string;
+  portugueseTitle: string;
   items: Items[];
   titleBold?: boolean;
 }
 
 export interface Items {
-  label: string;
-  href: string;
+  englishLabel: string;
+  englishSmallText?: string;
+  portugueseLabel: string;
+  portugueseSmallText?: string;
+  href?: string;
   bold?: boolean;
 }
 
@@ -46,7 +51,6 @@ export interface IconsFooter {
 }
 
 export interface Props {
-  upperTitle: string;
   downloadTitle?: string;
   osSystem?: Os[];
   links?: Column[];
@@ -54,93 +58,37 @@ export interface Props {
   osTitleBold?: boolean;
   pj?: PJ[];
   iconFooter?: IconsFooter[];
+  urlData: UrlData;
 }
 
 export default function Footer({
-  links = [
-    {
-      title: "Column One",
-      items: [
-        { label: "Link One", href: "/" },
-        { label: "Link Two", href: "/" },
-        { label: "Link Three", href: "/" },
-        { label: "Link Four", href: "/" },
-        { label: "Link Five", href: "/" },
-      ],
-    },
-    {
-      title: "Column One",
-      items: [
-        { label: "Link One", href: "/" },
-        { label: "Link Two", href: "/" },
-        { label: "Link Three", href: "/" },
-        { label: "Link Four", href: "/" },
-        { label: "Link Five", href: "/" },
-      ],
-    },
-    {
-      title: "Column Two",
-      items: [
-        { label: "Link Six", href: "/" },
-        { label: "Link Seven", href: "/" },
-        { label: "Link Eight", href: "/" },
-        { label: "Link Nine", href: "/" },
-        { label: "Link Ten", href: "/" },
-      ],
-    },
-    {
-      title: "Column Three",
-      items: [
-        { label: "Link Eleven", href: "/" },
-        { label: "Link Twelve", href: "/" },
-        { label: "Link FourThirteenteen", href: "/" },
-        { label: "Link Fourteen", href: "/" },
-        { label: "Link Fifteen", href: "/" },
-      ],
-    },
-  ],
+  links,
   linksBellow = [],
   downloadTitle,
   osSystem,
   osTitleBold,
   pj,
-  upperTitle,
-  iconFooter,
-
+  urlData,
 }: Props) {
+  const eng = urlData.lang == 'EN' ? true : false;
   return (
     <div>
-    <div class="bg-neutral hidden">
-      <div class="flex w-full w-1/3 items-center lg:mx-auto max-w-[1060px]">
-        <h1 class="text-secondary px-10 text-[32px]">{upperTitle}</h1>
-        <div class="flex justify-between">
-          {iconFooter?.map((icon)=>
-            <div class="px-10 border-x border-secondary w-[174px] py-[72px] flex itens-center">
-              <a href={icon.socialLink} class="">
-                <Image
-                src={icon.imageIcon}
-                />
-              </a>
-            </div>
-          )}
-        </div>
-      </div>
-    </div>
       <div>
         <div class="bg-secondary-content">
           <div class="lg:container lg:mx-auto md:max-w-[1060px] mx-4 pt-16 bg-secondary-content text-secondary">
             <div class="flex flex-col">
               <div class="flex flex-col lg:flex-row">
-                <div class="flex justify-between flex-wrap items-between w-full gap-[10px]">
+                <div class="flex justify-evenly flex-wrap w-full gap-[10px]">
                   {links?.map((link) => (
-                    <div class="max-w-[157px] py-8 lg:py-[1px]">
-                      <h4 class={`${link.titleBold && 'font-bold'} text-[20px] lg:text-[22px] mb-4`}>{link.title}</h4>
+                    <div class="max-w-[250px] py-8 lg:py-[1px]">
+                      <h4 class={`${link.titleBold && 'font-bold'} text-[20px] lg:text-[22px] mb-4`}>{eng ? link.englishTitle : link.portugueseTitle}</h4>
                       {link.items?.map((item) => (
                         <a
-                          class={`${item.bold && 'font-bold'} text-[14px] lg:text-[16px] block hover:underline link no-underline py-1`}
+                          class={`${item.bold && 'font-bold'} flex items-center text-[14px] lg:text-[16px] block hover:underline link no-underline py-1`}
                           href={item.href}
                         >
-                          {item.label}
+                          <span class="w-[157px] block">{eng ? item.englishLabel : item.portugueseLabel}</span>
+                          <span class="text-[10px]">{eng ? item.englishSmallText : item.portugueseSmallText}</span>
                         </a>
                       ))}
                     </div>
@@ -168,13 +116,13 @@ export default function Footer({
               <div>
                     {linksBellow?.map((link) => (
                       <div>
-                        <h4 class={`${link?.titleBold && 'font-bold'} text-[22px] mb-4`}>{link.title}</h4>
+                        <h4 class={`${link?.titleBold && 'font-bold'} text-[22px] mb-4`}>{eng ? link.englishTitle : link.portugueseTitle}</h4>
                         {link.items?.map((item) => (
                           <a
                             class={`${item.bold && 'font-bold'} block hover:underline link no-underline py-1`}
                             href={item.href}
                           >
-                            {item.label}
+                            {eng ? item.englishLabel : item.portugueseLabel}
                           </a>
                         ))}
                       </div>

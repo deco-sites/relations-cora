@@ -10,7 +10,16 @@
       "title": "Press room",
       "description": "Cora is the first and leading digital bank exclusively focused on SMBs in Brazil. The company provides a one-stop solution by bringing together a multi-product credit offering, banking service and a full suite of business analytics tools. \n\nOur mission is to increase the likelihood of SMB entrepreneurs achieving their dreams. ",
       "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/dfe0d3d7-b079-4934-9800-49da275a76d5",
-      "cta": []
+      "cta": [],
+      "urlData": {
+        "__resolveType": "site/loaders/urlData.ts"
+      },
+      "englishTitle": "Press Room",
+      "portugueseTitle": "Sala de Imprensa",
+      "englishDescription": "Cora is the first and leading digital bank exclusively focused on SMBs in Brazil. The company provides a one-stop solution by bringing together a multi-product credit offering, banking service and a full suite of business analytics tools. ",
+      "portugueseDescription": "A Cora é o primeiro e principal banco digital voltado exclusivamente para PMEs no Brasil. A empresa fornece uma solução única, reunindo uma oferta de crédito multiproduto, serviço bancário e um conjunto completo de ferramentas de análise de negócios. ",
+      "englishSmallDescription": "Our mission is to increase the likelihood of SMB entrepreneurs achieving their dreams. ",
+      "portugueseSmallDescription": "Nossa missão é aumentar a probabilidade de os empreendedores de PMEs realizarem seus sonhos. "
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
@@ -20,6 +29,10 @@
         "posts": {
           "__resolveType": "blog/loaders/BlogpostList.ts",
           "count": 100
+        },
+        "categoria": [],
+        "urlData": {
+          "__resolveType": "site/loaders/urlData.ts"
         }
       }
     },
@@ -31,14 +44,33 @@
           "title": "Press Kit",
           "textButton": "Download",
           "textlink": "/",
-          "backgroundColor": true
+          "backgroundColor": true,
+          "englishTitle": "Press kit",
+          "portugueseTitle": "Kit de Imprensa",
+          "englishParagraph": "Access our media kit",
+          "portugueseParagraph": "Acesse nosso kit de mídia",
+          "textLink": "/",
+          "portugueseTextlink": "Download",
+          "englishTextlink": "Download"
         },
         {
           "title": "Contact Us",
           "textButton": "To the press room",
-          "paragraph": "Contact our press relations team"
+          "paragraph": "Contact our press relations team",
+          "englishTitle": "Contact us",
+          "portugueseTitle": "Entre em Contato",
+          "englishParagraph": "Contact our press relations team",
+          "portugueseParagraph": "Entre em contato com nossa equipe de relações com a imprensa",
+          "englishTextButton": "To the press room",
+          "portugueseTextButton": "Sala de imprensa",
+          "textLink": "/",
+          "portugueseTextlink": "Sala de Imprensa",
+          "englishTextlink": "To the press room"
         }
-      ]
+      ],
+      "dataUrl": {
+        "__resolveType": "site/loaders/urlData.ts"
+      }
     },
     {
       "__resolveType": "site/sections/emailSubscribe.tsx",
@@ -48,7 +80,12 @@
       "logoAlt": "CaraLogo",
       "logo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/67cd8e0a-ee56-459f-9ba9-d73df1c1bc33",
       "subscribeText": "Subscribe to get Cora’s latest news on your inbox",
-      "bgColor": "lightGray"
+      "bgColor": "lightGray",
+      "urlData": {
+        "__resolveType": "site/loaders/urlData.ts"
+      },
+      "englishText": "Subscribe to get Cora’s latest news on your inbox.",
+      "portugueseText": "Inscreva-se para receber as últimas notícias de Cora em sua caixa de entrada"
     },
     {
       "__resolveType": "Footer"

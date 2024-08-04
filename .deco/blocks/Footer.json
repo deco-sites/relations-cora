@@ -5,68 +5,112 @@
       "items": [
         {
           "label": "Sala de Imprensa",
-          "href": "/",
-          "bold": false
+          "href": "/press-room",
+          "bold": false,
+          "englishLabel": "Press Room",
+          "portugueseLabel": "Sala de Imprensa"
         },
         {
           "label": "Carreiras",
-          "href": "/"
+          "href": "/",
+          "portugueseLabel": "Carreiras",
+          "englishLabel": "Careers"
         }
       ],
       "title": "Cora",
       "bold": true,
-      "titleBold": false
+      "titleBold": false,
+      "englishTitle": "Cora",
+      "portugueseTitle": "Cora"
     },
     {
       "items": [
         {
           "label": "Conta PJ",
-          "href": "/"
+          "href": "/",
+          "englishLabel": "corporate account",
+          "portugueseLabel": "Conta PJ"
         },
         {
           "label": "Cartão",
-          "href": "/"
+          "href": "/",
+          "portugueseLabel": "cartão",
+          "englishLabel": "card"
         },
         {
           "label": "Gestão de Cobranças",
-          "href": "/"
+          "href": "/",
+          "portugueseLabel": "Gestão de cobranças",
+          "englishLabel": "Collection Management"
         },
         {
           "label": "Boletos",
-          "href": "/"
+          "href": "/",
+          "portugueseLabel": "Boletos",
+          "englishLabel": "bank payment slip"
         }
       ],
-      "title": "Produtos"
+      "title": "Produtos",
+      "englishTitle": "Products",
+      "portugueseTitle": "Produtos"
     },
     {
       "items": [
         {
           "label": "Blog",
-          "href": "/"
+          "href": "/",
+          "englishLabel": "Blog",
+          "portugueseLabel": "Blog"
         },
         {
           "label": "Por que não cobramos tarifas?",
-          "href": "/"
+          "href": "/",
+          "portugueseLabel": "Por que não cobramos tarifas?",
+          "englishLabel": "Why don't we charge fees?"
         }
       ],
-      "title": "Explore"
+      "title": "Explore",
+      "englishTitle": "Explore",
+      "portugueseTitle": "Explore"
     },
     {
       "items": [
         {
           "label": "Central de ajuda",
-          "href": "/"
+          "href": "/",
+          "portugueseLabel": "Central de ajuda",
+          "englishLabel": "Help center"
         },
         {
           "label": "Segurança",
-          "href": "/"
+          "href": "/",
+          "portugueseLabel": "Segurança",
+          "englishLabel": "Security"
         },
         {
           "label": "Contatos para Clientes:",
-          "href": "/"
+          "href": "/",
+          "portugueseLabel": "Contato para Clientes:",
+          "englishLabel": "Contact for clients:"
+        },
+        {
+          "englishLabel": "(11) 5039-5715",
+          "portugueseLabel": "(11) 5039-5715"
+        },
+        {
+          "englishLabel": "0800 591 2350 ",
+          "portugueseLabel": "0800 591 2350 "
+        },
+        {
+          "portugueseLabel": "Chat no aplicativo ",
+          "englishLabel": "Chat in the app",
+          "englishSmallText": "- 24-hour service ",
+          "portugueseSmallText": "- atendimento 24h"
         }
       ],
-      "title": "Suporte"
+      "title": "Suporte",
+      "portugueseTitle": "Suporte",
+      "englishTitle": "Support"
     }
   ],
   "bottomLinks": [],
@@ -160,5 +204,10 @@
       "socialLink": "/",
       "imageIcon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/e5cd6469-bc9f-438f-ac05-8d9cbb4db828"
     }
-  ]
+  ],
+  "urlData": {
+    "__resolveType": "site/loaders/urlData.ts"
+  },
+  "englishUpperTitle": "Cora",
+  "portugueseUpperTitle": "Cora"
 }

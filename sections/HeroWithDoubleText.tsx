@@ -1,18 +1,24 @@
 
 import { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
+import { UrlData } from "site/loaders/urlData.ts";
 
 interface props {
-  mainTitle?: string;
-  mainParagraph?: string;
-  secondaryParagraph?: string;
+  urlData: UrlData
+  englishMainTitle?: string;
+  portugueseMainTitle?: string;
+  portugueseMainParagraph?: string;
+  englishMainParagraph?: string;
+  portugueseSecondaryParagraph?: string;
+  englishSecondaryParagraph?: string;
   buttonText?: string;
   pureBackground?: ImageWidget;
   coraLogo?: ImageWidget;
   peopleImageCenter?: ImageWidget;
 }
 
-export default function HeroWithDoubleText(props:props) {
+export default function HeroWithDoubleText(props : props) {
+  const eng = props.urlData.lang == 'EN' ? true : false;
   return (
 
       <div class="relative min-h-[920px]">
@@ -26,8 +32,8 @@ export default function HeroWithDoubleText(props:props) {
           <div class="max-w-[1200px]  mx-auto rounded-[48px] relative bg-accent-content text-secondary bg-opacity-80 border border-secondary">
             <div class="flex px-12 flex-wrap justify-center rounded-[48px] border border-secondary">
               <div class="pt-[130px] lg:pb-[88px] pb-8 lg:pb-0 lg:w-[25%]">
-                <h1 class="text-[48px]">{props.mainTitle}</h1>
-                <p class="text-[24px]">{props.mainParagraph}</p>
+                <h1 class="text-[48px]">{eng ? props.englishMainTitle : props.portugueseMainTitle}</h1>
+                <p class="text-[24px]">{eng ? props.englishMainParagraph : props.portugueseMainParagraph}</p>
               </div>
               <div class="lg:w-[50%]">
                 <div class="xl:absolute mb-0 bottom-0 sm:mt-[130px] h-auto lg:h-[105%]">
@@ -39,7 +45,7 @@ export default function HeroWithDoubleText(props:props) {
                 </div>
               </div>
               <div class="flex flex-col justify-end pt-8 lg:pt-0 pb-[34px] lg:w-[25%]">
-                <p class="text-[22px]">{props.secondaryParagraph}</p>
+                <p class="text-[22px]">{eng ? props.englishSecondaryParagraph : props.portugueseSecondaryParagraph}</p>
               </div>
             </div>
             <div class="flex justify-between gap-4 px-12 py-6">

@@ -1,6 +1,11 @@
 {
   "name": "Home",
   "path": "/",
+  "__resolveType": "website/pages/Page.tsx",
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx",
+    "type": "website"
+  },
   "sections": [
     {
       "__resolveType": "Header"
@@ -13,9 +18,17 @@
         "mainTitle": "Corporate Information",
         "mainParagraph": "Cora is the first and leading digital bank exclusively focused on SMBs in Brazil. The company provides a one-stop solution by bringing together a multi-product credit offering, banking service and a full suite of business analytics tools. ",
         "secondaryParagraph": "Our mission is to increase the likelihood of SMB entrepreneurs achieving their dreams. ",
-        "buttonText": "sign up",
         "coraLogo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/67cd8e0a-ee56-459f-9ba9-d73df1c1bc33",
-        "peopleImageCenter": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/954ac2b6-52f4-4800-bb52-15e6fdc75f79"
+        "peopleImageCenter": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/954ac2b6-52f4-4800-bb52-15e6fdc75f79",
+        "urlData": {
+          "__resolveType": "site/loaders/urlData.ts"
+        },
+        "englishMainTitle": "Corporate Information",
+        "portugueseMainTitle": "Informação corporativa",
+        "englishMainParagraph": "Cora is the first and leading digital bank exclusively focused on SMBs in Brazil. The company provides a one-stop solution by bringing together a multi-product credit offering, banking service and a full suite of business analytics tools. ",
+        "portugueseMainParagraph": "Cora é o primeiro e principal banco digital focado exclusivamente em PMEs no Brasil. A empresa fornece uma solução completa ao reunir uma oferta de crédito multiproduto, serviço bancário e um conjunto completo de ferramentas de análise de negócios. \",",
+        "englishSecondaryParagraph": "Our mission is to increase the likelihood of SMB entrepreneurs achieving their dreams.",
+        "portugueseSecondaryParagraph": "Nossa missão é aumentar a probabilidade de empreendedores de PMEs realizarem seus sonhos"
       }
     },
     {
@@ -27,10 +40,19 @@
         {
           "style": "Outline",
           "href": "/",
-          "text": "Learn More"
+          "text": "Learn More",
+          "englishText": "Learn More",
+          "portugueseText": "Saiba Mais"
         }
       ],
-      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/82f16130-a024-4d9c-ba80-2962e5661b7f"
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/82f16130-a024-4d9c-ba80-2962e5661b7f",
+      "urlData": {
+        "__resolveType": "site/loaders/urlData.ts"
+      },
+      "englishTitle": "The Cora Story",
+      "portugueseTitle": "A História da Cora",
+      "englishDescription": "Our journey starts a long time ago, in 2004, with a company called MoIP (Money over IP). One of our founders, Leo, was visiting Silicon Valley and he came across the Paypal business model, which was disrupting US traditional payment methods at that time.",
+      "portugueseDescription": "Nossa jornada começou há muito tempo, em 2004, com uma empresa chamada MoIP (Money over IP). Um dos nossos fundadores, Leo, estava visitando o Vale do Silício e se deparou com o modelo de negócios do Paypal, que estava interrompendo os métodos de pagamento tradicionais dos EUA naquela época.\","
     },
     {
       "__resolveType": "site/sections/Highlight.tsx",
@@ -39,23 +61,50 @@
       "highlights": [
         {
           "secondaryTitles": "1.44mm",
-          "secondaryParagraphs": "Customers"
+          "secondaryParagraphs": "Customers",
+          "portugueseSecondaryTitles": "1.44mm",
+          "englishSecondaryParagraphs": "customers",
+          "portugueseSecondaryParagraphs": "clientes",
+          "englishSecondaryTitles": "1.44mm"
         },
         {
           "secondaryParagraphs": "assets under custody ",
           "secondaryTitles": "R$ 1.6bi",
-          "tertiaryparagraph": "(as of June 2024)"
+          "tertiaryparagraph": "(as of June 2024)",
+          "englishSecondaryParagraphs": "assets under custody",
+          "englishTertiaryparagraph": "(as of June 2024)",
+          "englishSecondaryTitles": "R$ 1.6bi",
+          "portugueseSecondaryTitles": "R$ 1.6bi",
+          "portugueseSecondaryParagraphs": "ativos sob custódia",
+          "portugueseTertiaryparagraph": "(a partir de junho de 2024)"
         },
         {
           "secondaryTitles": "R$ 163bi",
           "secondaryParagraphs": "annualized TPV",
-          "tertiaryparagraph": "(as of June 2024)"
+          "tertiaryparagraph": "(as of June 2024)",
+          "englishSecondaryTitles": "R$ 163bi",
+          "portugueseSecondaryTitles": "R$ 163bi",
+          "englishSecondaryParagraphs": "annualized TPV",
+          "englishTertiaryparagraph": "(as of June 2024)",
+          "portugueseTertiaryparagraph": "(a partir de junho de 2024)",
+          "portugueseSecondaryParagraphs": "TPV anualizado"
         },
         {
           "secondaryTitles": "$ 153m",
-          "secondaryParagraphs": "raised through 3 financing rounds"
+          "secondaryParagraphs": "raised through 3 financing rounds",
+          "englishSecondaryTitles": "153m",
+          "portugueseSecondaryTitles": "153m",
+          "englishSecondaryParagraphs": "raised through 3 financing rounds",
+          "portugueseSecondaryParagraphs": "arrecadado em 3 rodadas de financiamento"
         }
-      ]
+      ],
+      "urlData": {
+        "__resolveType": "site/loaders/urlData.ts"
+      },
+      "englishTitle": "Highlights",
+      "portugueseTitle": "Destaques",
+      "portugueseParagraph": "Nossos últimos resultados",
+      "englishParagraph": "Our latest results"
     },
     {
       "__resolveType": "EmailSubscribe"
@@ -68,15 +117,34 @@
           "paragraph": "Access our Investors Relations portal for financial information, corporate presentations and regulatory reports.",
           "textlink": "/",
           "textButton": "To the portal",
-          "backgroundColor": true
+          "backgroundColor": true,
+          "englishTitle": "Investor Relations",
+          "englishParagraph": "Access our Investors Relations portal for financial information, corporate presentations and regulatory reports.",
+          "portugueseTitle": "Relações com investidores",
+          "portugueseParagraph": "Acesse nosso portal de Relações com Investidores para obter informações financeiras, apresentações corporativas e relatórios regulatórios.",
+          "englishTextlink": "investor relations",
+          "textLink": "/investor-relations",
+          "portugueseTextlink": "Para o Portal"
         },
         {
           "title": "Press Room",
           "paragraph": "Access our Press Room for releases, media clipping, media kit and more. ",
           "textButton": "To the press room",
-          "textlink": "/"
+          "textlink": "/",
+          "englishTitle": "Press Room",
+          "englishParagraph": "Access our Press Room for releases, media clipping, media kit and more. ",
+          "englishTextButton": "To the press room",
+          "portugueseTitle": "Sala de Imprensa",
+          "portugueseParagraph": "Acesse nossa Sala de Imprensa para obter comunicados, clipping de mídia, kit de mídia e muito mais. ",
+          "portugueseTextButton": "Sala de imprensa",
+          "textLink": "/press-room",
+          "portugueseTextlink": "Sala de imprensa",
+          "englishTextlink": "Press room"
         }
-      ]
+      ],
+      "dataUrl": {
+        "__resolveType": "site/loaders/urlData.ts"
+      }
     },
     {
       "__resolveType": "site/sections/OurInvestment.tsx",
@@ -106,15 +174,15 @@
           "name": "tiger global",
           "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/3d8da413-8005-4374-bfe3-236989eb7eef"
         }
-      ]
+      ],
+      "englishTitle": "Our Investors",
+      "portugueseTitle": "Nossos Investidores",
+      "dataUrl": {
+        "__resolveType": "site/loaders/urlData.ts"
+      }
     },
     {
       "__resolveType": "Footer"
     }
-  ],
-  "__resolveType": "website/pages/Page.tsx",
-  "seo": {
-    "__resolveType": "website/sections/Seo/SeoV2.tsx",
-    "type": "website"
-  }
+  ]
 }
