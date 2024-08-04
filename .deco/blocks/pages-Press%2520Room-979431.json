@@ -85,7 +85,9 @@
         "__resolveType": "site/loaders/urlData.ts"
       },
       "englishText": "Subscribe to get Cora’s latest news on your inbox.",
-      "portugueseText": "Inscreva-se para receber as últimas notícias de Cora em sua caixa de entrada"
+      "portugueseText": "Inscreva-se para receber as últimas notícias de Cora em sua caixa de entrada",
+      "englishButtonText": "subscribe",
+      "portugueseButtonText": "inscreva-se"
     },
     {
       "__resolveType": "Footer"

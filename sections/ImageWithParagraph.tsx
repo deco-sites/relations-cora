@@ -56,8 +56,8 @@ export default function ImageWithParagraph({
 }: Props) {
   const eng = urlData.lang == 'EN' ? true : false;
   return (
-    <div class="relative px-20 my-4">
-      {imageBackground && <div class="absolute bg-primary-content w-5/12 h-full top-0 right-0 rounded-l-3xl -z-50"/>}
+    <div class="relative px-4 md:px-20 my-4">
+      {imageBackground && <div class="hidden md:block absolute bg-primary-content w-5/12 h-full top-0 right-0 rounded-l-3xl -z-50"/>}
       <div class="container mx-auto max-w-[1060px] mx-4 text-sm">
         <div
           class={`flex ${

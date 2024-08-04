@@ -5,7 +5,8 @@ import { UrlData } from "../loaders/urlData.ts";
 export interface Props {
     portugueseText?: string;
     englishText?: string;
-    buttonText?: string;
+    englishButtonText?: string;
+    portugueseButtonText?: string;
     logoAlt?: string;
     logo?: ImageWidget;
     bgcolor?: 'dark' | 'lightGray';
@@ -17,7 +18,7 @@ const BGCOLOR = {
     lightGray: 'bg-primary-content text-neutral mx-auto rounded-lg w-[80%]',
 };
 
-export default function({portugueseText, englishText, urlData, buttonText, logoAlt, logo, bgcolor = 'dark'}: Props) {
+export default function({portugueseText, englishText, urlData, logoAlt, logo, englishButtonText, portugueseButtonText, bgcolor = 'dark'}: Props) {
     const eng = urlData.lang == 'EN' ? true : false;
     return(
         <div class={`${BGCOLOR[bgcolor]} flex flex-col justify-center items-center`}>
@@ -34,7 +35,7 @@ export default function({portugueseText, englishText, urlData, buttonText, logoA
             </div>
             <div class="flex flex-column flex-wrap justify-center gap-3 align-center pb-[56px] lg:flex-row">
                 <input type="text" placeholder="E-mail" class="lg:px-12 px-4 py-2 text-[24px] rounded-xl" />
-                <button class="bg-primary py-2 px-4 text-[24px] text-secondary lg:px-[55px] lg:py-[10px] rounded-xl">{buttonText}</button>
+                <button class="bg-primary py-2 px-4 text-[24px] text-secondary lg:px-[55px] lg:py-[10px] rounded-xl">{eng ? englishButtonText : portugueseButtonText}</button>
             </div>
         </div>
     )

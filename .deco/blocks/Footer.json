@@ -125,29 +125,39 @@
       "items": [
         {
           "label": "Regulatório",
-          "href": "/"
+          "href": "/",
+          "englishLabel": "Regulatory",
+          "portugueseLabel": "Regulatório"
         },
         {
           "label": "Parceiros e Fornecedores",
-          "href": "/"
+          "href": "/",
+          "portugueseLabel": "Termos e condições",
+          "englishLabel": "Partners and Suppliers"
         },
         {
           "label": "Ouvidoria",
-          "href": "/"
+          "href": "/",
+          "englishLabel": "Privacy Policy",
+          "portugueseLabel": "Política de privacidade"
         }
       ],
       "title": "Transparência",
-      "titleBold": true
+      "titleBold": true,
+      "englishTitle": "Transparency",
+      "portugueseTitle": "Transparência"
     }
   ],
   "osSystem": [
     {
       "osName": "PlayStore",
-      "osDownloadLink": "/"
+      "osDownloadLink": "/",
+      "osIcon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/0319eb55-7d78-4b2f-b7b2-0730d715c118"
     },
     {
-      "osName": "App Store",
-      "osDownloadLink": "/"
+      "osName": "AppleStore",
+      "osDownloadLink": "/",
+      "osIcon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/644c9b78-905f-42f6-9caa-e3bcaf41c99a"
     }
   ],
   "downloadTitle": "Baixe o App",
@@ -184,27 +194,7 @@
     }
   ],
   "upperTitle": "Siga a cora",
-  "iconFooter": [
-    {
-      "imageIcon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/1eb84139-824c-4680-934d-7a718bfae2fc",
-      "socialLink": "/"
-    },
-    {
-      "imageIcon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/81666683-5e97-4850-8396-4599112a612d"
-    },
-    {
-      "imageIcon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/9f290e8b-7d07-43d1-920d-76fe5927379e",
-      "socialLink": "/"
-    },
-    {
-      "imageIcon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/87907e4c-2e0e-4ce0-8052-b58a8c8219e8",
-      "socialLink": "/"
-    },
-    {
-      "socialLink": "/",
-      "imageIcon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/e5cd6469-bc9f-438f-ac05-8d9cbb4db828"
-    }
-  ],
+  "iconFooter": [],
   "urlData": {
     "__resolveType": "site/loaders/urlData.ts"
   },

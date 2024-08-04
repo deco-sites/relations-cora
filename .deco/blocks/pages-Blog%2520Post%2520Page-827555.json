@@ -19,7 +19,14 @@
       "logoAlt": "CaraLogo",
       "subscribeText": "Subscribe to get Cora’s latest news on your inbox",
       "bgColor": "lightGray",
-      "bgcolor": "lightGray"
+      "bgcolor": "lightGray",
+      "englishText": "Subscribe to get Cora’s latest news on your inbox",
+      "portugueseText": "Inscreva-se para receber as últimas notícias de Cora na sua caixa de entrada",
+      "portugueseButtonText": "Inscreva-se",
+      "englishButtonText": "Subscribe",
+      "urlData": {
+        "__resolveType": "site/loaders/urlData.ts"
+      }
     },
     {
       "__resolveType": "Footer"

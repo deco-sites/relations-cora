@@ -94,6 +94,9 @@ export default function Haader({
                     </a>
                   </li>
                 ))}
+                <div>
+                  <LangSelector />
+                </div>
               </ul>
               <ul class="flex items-center gap-3">
                 {navigation.buttons?.map((item) => (

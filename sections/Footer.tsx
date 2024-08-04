@@ -45,10 +45,6 @@ export interface PJ {
   endereço: string;
 }
 
-export interface IconsFooter {
-  imageIcon?: ImageWidget;
-  socialLink?: string;
-}
 
 export interface Props {
   downloadTitle?: string;
@@ -80,14 +76,14 @@ export default function Footer({
               <div class="flex flex-col lg:flex-row">
                 <div class="flex justify-evenly flex-wrap w-full gap-[10px]">
                   {links?.map((link) => (
-                    <div class="max-w-[250px] py-8 lg:py-[1px]">
+                    <div class="max-w-[250px] w-1/2 md:w-auto py-8 lg:py-[1px]">
                       <h4 class={`${link.titleBold && 'font-bold'} text-[20px] lg:text-[22px] mb-4`}>{eng ? link.englishTitle : link.portugueseTitle}</h4>
                       {link.items?.map((item) => (
                         <a
                           class={`${item.bold && 'font-bold'} flex items-center text-[14px] lg:text-[16px] block hover:underline link no-underline py-1`}
                           href={item.href}
                         >
-                          <span class="w-[157px] block">{eng ? item.englishLabel : item.portugueseLabel}</span>
+                          <span class="max-w-[157px] md:w-auto block">{eng ? item.englishLabel : item.portugueseLabel}</span>
                           <span class="text-[10px]">{eng ? item.englishSmallText : item.portugueseSmallText}</span>
                         </a>
                       ))}
@@ -96,7 +92,7 @@ export default function Footer({
                 </div>
               </div>
             </div>
-            <div class="flex py-24 flex-wrap">
+            <div class="flex py-24 flex-wrap justify-evenly">
               <div class="lg:min-w-[580px]">
                 <h1 class={`${osTitleBold && 'font-bold'} text-[22px]`}>{downloadTitle}</h1>
                 <div class="flex gap-10 pt-10">

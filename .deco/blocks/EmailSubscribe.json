@@ -8,6 +8,10 @@
   "bgColor": "lightGray",
   "bgcolor": "dark",
   "urlData": {
-    "url": {}
-  }
+    "__resolveType": "site/loaders/urlData.ts"
+  },
+  "portugueseButtonText": "inscreva-se",
+  "portugueseText": "Inscreva-se para receber as últimas notícias de Cora em sua caixa de entrada",
+  "englishText": "Subscribe to get Cora’s latest news on your inbox",
+  "englishButtonText": "subscribe"
 }
