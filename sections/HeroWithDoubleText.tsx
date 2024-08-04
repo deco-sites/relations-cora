@@ -52,7 +52,7 @@ export default function HeroWithDoubleText(props : props) {
             <Image
               src={props.coraLogo}
               />
-            <button class="bg-primary py-2 rounded-xl px-4 sm:px-[78px]">{props.buttonText}</button>
+          {props.buttonText && <button class="bg-primary py-2 rounded-xl px-4 sm:px-[78px]">{props.buttonText}</button>}
             </div>
           </div>
         </div>
