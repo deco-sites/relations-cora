@@ -23,10 +23,10 @@ export default function(props: props) {
     return(
         <div class="flex flex-wrap lg:flex-row">
             {props.cards?.map((card, index) =>
-            <div class={`${card.backgroundColor && 'bg-primary-content'} ${ index % 2 == 0 ? ' rounded-r-3xl' : 'rounded-l-3xl'} w-full md:w-1/2 flex flex-col justify-center text-left px-10 lg:px-[60px] py-[88px]`}>
-                    <h1 class="text-primary min-h-36 w-300 text-[48px]">{eng ? card.englishTitle : card.portugueseTitle}</h1>
-                    <p class="py-[33px] grow text-2xl">{eng ? card.englishParagraph : card.portugueseParagraph}</p>
-                    <div>
+            <div class={`${card.backgroundColor && 'bg-primary-content'} ${ index % 2 == 0 ? ' rounded-r-3xl' : 'rounded-l-3xl'} w-full md:w-1/2 flex flex-col justify-center text-left px-10 lg:px-[60px] pb-[75px] pt-[67px]`}>
+                    <h1 class="text-primary flex items-center md:h-[33%] w-300 text-[48px]">{eng ? card.englishTitle : card.portugueseTitle}</h1>
+                    <p class="py-[33px] md:h-[33%] grow text-2xl">{eng ? card.englishParagraph : card.portugueseParagraph}</p>
+                    <div class="py-3 md:h-[33%] flex md:py-10 items-center">
                     <a href={card.textLink} class="px-12 py-3 text-lg md:text-2xl border rounded-full border-base-200">{eng ? card.englishTextlink : card.portugueseTextlink}</a>
                     </div>
             </div>

@@ -87,7 +87,7 @@ export default function ImageWithParagraph({
             <p class="leading-normal text-xl md:text-2xl">
               {eng ? englishDescription : portugueseDescription}
             </p>
-            <p class="leading-normal text-lg pt-4">{eng ? englishSmallDescription : portugueseSmallDescription}</p>
+            <p class="leading-normal text-[22px] pt-4">{eng ? englishSmallDescription : portugueseSmallDescription}</p>
             <div class="flex gap-3 pt-4">
               {cta?.map((item) => (
                 <a
