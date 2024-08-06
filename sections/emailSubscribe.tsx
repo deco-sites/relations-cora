@@ -14,7 +14,7 @@ export interface Props {
 }
 
 const BGCOLOR = {
-    dark: 'bg-neutral text-secondary',
+    dark: 'bg-neutral text-secondary px-4',
     lightGray: 'bg-primary-content text-neutral mx-auto rounded-lg w-[80%]',
 };
 
@@ -33,10 +33,10 @@ export default function({portugueseText, englishText, urlData, logoAlt, logo, en
                     <h1 class={`${BGCOLOR[bgcolor]} text-[24px]`}>{eng ? englishText : portugueseText}</h1>
                 </div>
             </div>
-            <div class="flex flex-column flex-wrap justify-center gap-3 align-center pb-[56px] lg:flex-row">
+            <form class="flex flex-column flex-wrap justify-center gap-3 align-center pb-[56px] lg:flex-row">
                 <input type="text" placeholder="E-mail" class="lg:px-12 px-4 py-2 text-[24px] rounded-xl" />
-                <button class="bg-primary py-2 px-4 text-[24px] text-secondary lg:px-[55px] lg:py-[10px] rounded-xl">{eng ? englishButtonText : portugueseButtonText}</button>
-            </div>
+                <button type="submit" class="bg-primary py-2 px-4 text-[24px] text-secondary lg:px-[55px] lg:py-[10px] rounded-xl">{eng ? englishButtonText : portugueseButtonText}</button>
+            </form>
         </div>
     )
 }
