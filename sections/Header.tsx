@@ -74,7 +74,7 @@ export default function Haader({
             <Image class="object-contain" src={logo.src || ""} width={103} height={26} alt={logo.alt} />
           </a>
         <label
-          class="cursor-pointer lg:hidden pt-6 relative z-40"
+          class="cursor-pointer pb-4 lg:hidden pt-6 relative z-40"
           for="menu-mobile"
         >
           <input class="hidden peer" type="checkbox" id="menu-mobile" />
@@ -118,13 +118,13 @@ export default function Haader({
         </label>
 
         <ul class="hidden items-center justify-end lg:flex w-full">
-          <ul class="flex">
+          <ul class="flex items-center">
             {navigation.links.map((link) => (
               <li>
                 <a
                   href={link.url}
                   aria-label={eng ? link.englishLabel : link.portugueseLabel}
-                  class="link no-underline hover:underline p-4"
+                  class="link no-underline hover:underline px-4"
                 >
                   {eng ? link.englishLabel : link.portugueseLabel}
                 </a>

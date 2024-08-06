@@ -81,13 +81,13 @@ export default function ImageWithParagraph({
           {tagline && <p class="text-sm font-semibold">
               {tagline}
             </p>}
-            <p class="text-5xl text-primary font-bold leading-snug">
+            <p class="text-3xl md:text-5xl text-primary font-bold leading-snug">
               {eng ? englishTitle : portugueseTitle}
             </p>
-            <p class="leading-normal text-2xl">
+            <p class="leading-normal text-xl md:text-2xl">
               {eng ? englishDescription : portugueseDescription}
             </p>
-            <p class="leading-normal text-[22px] pt-4">{eng ? englishSmallDescription : portugueseSmallDescription}</p>
+            <p class="leading-normal text-lg pt-4">{eng ? englishSmallDescription : portugueseSmallDescription}</p>
             <div class="flex gap-3 pt-4">
               {cta?.map((item) => (
                 <a
@@ -95,7 +95,7 @@ export default function ImageWithParagraph({
                   id={item?.id}
                   href={item?.href}
                   target={item?.href.includes("http") ? "_blank" : "_self"}
-                  class={`text-2xl px-12 py-4 border rounded-full
+                  class={`text-2xl px-12 py-2 md:py-4 border rounded-full
                     ${!item.style || item.style == "Outline" && "btn-outline"}
                     ${item.style == "Ghost" && "btn-ghost"}
                   `}

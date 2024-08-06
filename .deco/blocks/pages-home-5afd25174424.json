@@ -26,7 +26,7 @@
         "englishMainTitle": "Corporate Information",
         "portugueseMainTitle": "Informação corporativa",
         "englishMainParagraph": "Cora is the first and leading digital bank exclusively focused on SMBs in Brazil. The company provides a one-stop solution by bringing together a multi-product credit offering, banking service and a full suite of business analytics tools. ",
-        "portugueseMainParagraph": "Cora é o primeiro e principal banco digital focado exclusivamente em PMEs no Brasil. A empresa fornece uma solução completa ao reunir uma oferta de crédito multiproduto, serviço bancário e um conjunto completo de ferramentas de análise de negócios. \",",
+        "portugueseMainParagraph": "Cora é o primeiro e principal banco digital focado exclusivamente em PMEs no Brasil. A empresa fornece uma solução completa ao reunir uma oferta de crédito multiproduto, serviço bancário e um conjunto completo de ferramentas de análise de negócios. ",
         "englishSecondaryParagraph": "Our mission is to increase the likelihood of SMB entrepreneurs achieving their dreams.",
         "portugueseSecondaryParagraph": "Nossa missão é aumentar a probabilidade de empreendedores de PMEs realizarem seus sonhos"
       }
@@ -123,7 +123,7 @@
           "englishParagraph": "Access our Investors Relations portal for financial information, corporate presentations and regulatory reports.",
           "portugueseTitle": "Relações com investidores",
           "portugueseParagraph": "Acesse nosso portal de Relações com Investidores para obter informações financeiras, apresentações corporativas e relatórios regulatórios.",
-          "englishTextlink": "investor relations",
+          "englishTextlink": "To the portal",
           "textLink": "/investor-relations",
           "portugueseTextlink": "Para o Portal"
         },
