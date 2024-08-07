@@ -51,7 +51,9 @@
           "portugueseParagraph": "Acesse nosso kit de mídia",
           "textLink": "https://drive.google.com/drive/u/1/folders/1UuzhrdCVz6wdDkrLJoq9M367N6AFQyCc",
           "portugueseTextlink": "Download",
-          "englishTextlink": "Download"
+          "englishTextlink": "Download",
+          "englishTextButton": "Download",
+          "portugueseTextButton": "Baixar"
         },
         {
           "title": "Contact Us",
@@ -61,9 +63,9 @@
           "portugueseTitle": "Entre em Contato",
           "englishParagraph": "Contact our press relations team",
           "portugueseParagraph": "Entre em contato com nossa equipe de relações com a imprensa",
-          "englishTextButton": "To the press room",
-          "portugueseTextButton": "Sala de imprensa",
-          "textLink": "/",
+          "englishTextButton": "Send us an email",
+          "portugueseTextButton": "Fale Conosco",
+          "textLink": " mailto:imprensa@cora.com.br",
           "portugueseTextlink": "Sala de Imprensa",
           "englishTextlink": "To the press room"
         }
