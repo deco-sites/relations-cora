@@ -27,7 +27,7 @@ export default function(props: props) {
                     <h1 class="text-primary flex items-center md:h-[33%] w-300 text-[48px]">{eng ? card.englishTitle : card.portugueseTitle}</h1>
                     <p class="py-[33px] md:h-[33%] grow text-2xl">{eng ? card.englishParagraph : card.portugueseParagraph}</p>
                     <div class="py-3 md:h-[33%] flex md:py-10 items-center">
-                    <a href={card.textLink} class="px-12 py-3 text-lg md:text-2xl border rounded-full border-base-200">{eng ? card.englishTextlink : card.portugueseTextlink}</a>
+                    <a href={card.textLink} target="_blank" class="px-12 py-3 text-lg md:text-2xl border rounded-full border-base-200">{eng ? card.englishTextlink : card.portugueseTextlink}</a>
                     </div>
             </div>
             )}

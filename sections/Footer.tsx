@@ -47,7 +47,8 @@ export interface PJ {
 
 
 export interface Props {
-  downloadTitle?: string;
+  engDownloadTitle?: string;
+  portugueseDownloadTitle?: string;
   osSystem?: Os[];
   links?: Column[];
   linksBellow?: Column[];
@@ -60,7 +61,8 @@ export interface Props {
 export default function Footer({
   links,
   linksBellow = [],
-  downloadTitle,
+  engDownloadTitle,
+  portugueseDownloadTitle,
   osSystem,
   osTitleBold,
   pj,
@@ -94,7 +96,7 @@ export default function Footer({
             </div>
             <div class="flex py-24 flex-wrap justify-evenly">
               <div class="lg:min-w-[580px]">
-                <h1 class={`${osTitleBold && 'font-bold'} text-[22px]`}>{downloadTitle}</h1>
+                <h1 class={`${osTitleBold && 'font-bold'} text-[22px]`}>{eng ? engDownloadTitle : portugueseDownloadTitle}</h1>
                 <div class="flex gap-10 pt-10">
                   {osSystem?.map((os)=>
                   <a class={`${os.osIcon && 'gap-1'} p-4 flex border border-secondary text-secondary rounded-xl`}

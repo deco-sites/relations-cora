@@ -16,7 +16,8 @@ const formatDate = (dateString) => {
 
 export default function({portugueseTitle, englishTitle, posts, urlData}:props) {
     const eng = urlData.lang == 'EN' ? true : false;
-    posts = posts?.filter((blog) => eng ? blog.categories[0].name == 'investor' : blog.categories[0].name == 'investidor') || [];
+    const currentCategory = eng ? 'investor' : 'investidor';
+    posts = posts?.filter((blog) => blog.categories.some((category) => category.name == currentCategory)) || [];
     return(
         <div class="px-4 md:px-[110px] py-[126px] flex flex-col justify-center">
             <h1 class="text-3xl text-bold md:text-5xl text-extrabold py-4">{eng ? englishTitle : portugueseTitle}</h1>

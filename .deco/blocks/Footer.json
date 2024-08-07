@@ -199,5 +199,7 @@
     "__resolveType": "site/loaders/urlData.ts"
   },
   "englishUpperTitle": "Cora",
-  "portugueseUpperTitle": "Cora"
+  "portugueseUpperTitle": "Cora",
+  "portugueseDownloadTitle": "Baixe o App",
+  "engDownloadTitle": "Download App"
 }
