@@ -94,7 +94,7 @@ export default function Footer({
                 </div>
               </div>
             </div>
-            <div class="flex py-24 flex-wrap justify-evenly">
+            <div class="flex py-24 flex-wrap gap-y-4 md:gap-y-0 justify-evenly">
               <div class="lg:min-w-[580px]">
                 <h1 class={`${osTitleBold && 'font-bold'} text-[22px]`}>{eng ? engDownloadTitle : portugueseDownloadTitle}</h1>
                 <div class="flex gap-10 pt-10">

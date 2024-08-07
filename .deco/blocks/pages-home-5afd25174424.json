@@ -125,7 +125,9 @@
           "portugueseParagraph": "Acesse nosso portal de Relações com Investidores para obter informações financeiras, apresentações corporativas e relatórios regulatórios.",
           "englishTextlink": "To the portal",
           "textLink": "/investor-relations",
-          "portugueseTextlink": "Para o Portal"
+          "portugueseTextlink": "Para o Portal",
+          "englishTextButton": "To the portal",
+          "portugueseTextButton": "Para o Portal"
         },
         {
           "title": "Press Room",
