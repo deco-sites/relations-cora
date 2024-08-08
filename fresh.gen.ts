@@ -3,6 +3,7 @@
 // This file is automatically updated during development when running `dev.ts`.
 
 import * as $_app from "./routes/_app.tsx";
+import * as $EmailForm from "./islands/EmailForm.tsx";
 import * as $LangSelector from "./islands/LangSelector.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
@@ -11,6 +12,7 @@ const manifest = {
     "./routes/_app.tsx": $_app,
   },
   islands: {
+    "./islands/EmailForm.tsx": $EmailForm,
     "./islands/LangSelector.tsx": $LangSelector,
   },
   baseUrl: import.meta.url,

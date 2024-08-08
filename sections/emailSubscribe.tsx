@@ -1,6 +1,7 @@
 import Image from "apps/website/components/Image.tsx";
 import { ImageWidget } from "apps/admin/widgets.ts";
 import { UrlData } from "../loaders/urlData.ts";
+import EmailForms from '../islands/EmailForm.tsx'
 
 export interface Props {
     portugueseText?: string;
@@ -33,10 +34,7 @@ export default function({portugueseText, englishText, urlData, logoAlt, logo, en
                     <h1 class={`${BGCOLOR[bgcolor]} text-[24px]`}>{eng ? englishText : portugueseText}</h1>
                 </div>
             </div>
-            <form class="flex flex-column flex-wrap justify-center gap-3 align-center pb-[56px] lg:flex-row">
-                <input type="text" placeholder="E-mail" class="lg:px-12 px-4 py-2 text-[24px] rounded-xl" />
-                <button type="submit" class="bg-primary py-2 px-4 text-[24px] text-secondary lg:px-[55px] lg:py-[10px] rounded-xl">{eng ? englishButtonText : portugueseButtonText}</button>
-            </form>
+            <EmailForms eng={eng} englishButtonText={englishButtonText} portugueseButtonText={portugueseButtonText}/>
         </div>
     )
 }

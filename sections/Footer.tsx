@@ -54,7 +54,6 @@ export interface Props {
   linksBellow?: Column[];
   osTitleBold?: boolean;
   pj?: PJ[];
-  iconFooter?: IconsFooter[];
   urlData: UrlData;
 }
 

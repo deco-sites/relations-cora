@@ -35,5 +35,10 @@
   "flavor": {
     "framework": "fresh"
   },
-  "pageSections": []
+  "pageSections": [],
+  "trackCustomerToken": {
+    "__resolveType": "website/loaders/secret.ts",
+    "encrypted": "477a1625f6e354b343bf635d0ecdb62232a4d0daa556b5706a0fe5fbbdc3c67617758ddb4fa1d3bd2469462b12f002cd",
+    "name": "secret"
+  }
 }

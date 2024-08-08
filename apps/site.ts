@@ -2,6 +2,8 @@ import { App, AppContext as AC } from "deco/mod.ts";
 import blog from "apps/blog/mod.ts";
 import website, { Props } from "apps/website/mod.ts";
 
+import { Secret } from "apps/website/loaders/secret.ts";
+
 import manifest, { Manifest } from "../manifest.gen.ts";
 
 type WebsiteApp = ReturnType<typeof website>;
@@ -13,9 +15,14 @@ type BlogApp = ReturnType<typeof blog>;
  * @category Tool
  * @logo https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1/0ac02239-61e6-4289-8a36-e78c0975bcc8
  */
+
+export interface PropsWithSecret extends Props {
+  trackCustomerToken: Secret;
+}
+
 export default function Site(
-  state: Props,
-): App<Manifest, Props, [
+  state: PropsWithSecret,
+): App<Manifest, PropsWithSecret, [
   WebsiteApp,
   BlogApp,
 ]> {
