@@ -6,13 +6,13 @@
     }
   ],
   "seo": {
-    "titleTemplate": "%s | deco.cx",
+    "titleTemplate": "%s | Cora",
     "descriptionTemplate": "%s | Deco.cx",
     "type": "website",
     "title": "Blog",
     "description": "Improve your page performance with deco.cx",
-    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/5018/c8188deb-9ed0-4394-8ede-af8fb4263ba4",
-    "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/5018/71c97b9c-b94a-4cf5-8120-4bb7b99b21bb"
+    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/dfe0d3d7-b079-4934-9800-49da275a76d5",
+    "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11945/dbdd4311-cf47-4882-bc1b-90ba7fe5f46e"
   },
   "global": [
     {
@@ -38,7 +38,7 @@
   "pageSections": [],
   "trackCustomerToken": {
     "__resolveType": "website/loaders/secret.ts",
-    "encrypted": "477a1625f6e354b343bf635d0ecdb62232a4d0daa556b5706a0fe5fbbdc3c67617758ddb4fa1d3bd2469462b12f002cd",
+    "encrypted": "be0ab7d07f47d1d97d34e847053e99db203eeb8a04d2fc43e761354c54239ef878d85b5cfa80d7b04015a6449cf8cd47",
     "name": "secret"
   }
 }
